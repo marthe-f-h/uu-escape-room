@@ -1,9 +1,10 @@
-import { Heading } from '@navikt/ds-react'
+import { Heading, Link } from '@navikt/ds-react'
 import { useEffect, useRef } from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 import { useAppContext } from '../../AppContext'
 
 export const Start = () => {
-  const t = useAppContext().text.Start
+	const t = useAppContext().text.Start
 
 	document.title = t.title
 	const headingRef = useRef<HTMLHeadingElement>(null)
@@ -31,10 +32,11 @@ export const Start = () => {
 						{text}
 					</p>
 				))}
-				<p className="mt-2">
-					{t.mal}
-				</p>
+				<p className="mt-2">{t.mal}</p>
 			</div>
+			<Link className="mt-8" as={RouterLink} to={''}>
+				Er du klar? Begynn prøven
+			</Link>
 		</div>
 	)
 }

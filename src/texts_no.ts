@@ -63,7 +63,7 @@ const no = {
 		}
 	},
 	Start: {
-		title: 'uu spill - start',
+		title: 'uu spill - intro',
 		overskrift: 'Velkommen til Escape Room - Gudenes gunst!',
 		intro: [
 			'Du var soldat i keiserens tjeneste. En lojal kriger, bundet av ed og ære. Da riket vaklet under varsler om krig og sult, ble du utvalgt til et oppdrag kun de modigste kunne bære: å hente en eldgammel gjenstand - Lyren til Apollo - skjult dypt i et glemt tempel viet de eldgamle gudene.',
@@ -71,7 +71,7 @@ const no = {
 			'Du trosset varselet, du gikk inn. Slik falt dommen. Mørket tok deg, og du ble sendt til underverdenen - et sted der sjeler vandrer i evig skygge.',
 			'Men alt håp er ikke tapt. Gudene er lunefulle, men ikke døve for mot. Du har én sjanse: Bevis din verdighet ved å fullføre prøvelsene de har lagt foran deg. Kunnskap, styrke og klokskap vil føre deg gjennom mørket.'
 		],
-		mal: 'Finn veien gjennom prøvelsene gudene har lagt foran deg. Vinn tilbake deres gunst, gjennopprett balansen, kom tilbake til de levendes verden - og finn Apollos Lyre.',
+		mal: 'Finn veien gjennom prøvelsene gudene har lagt foran deg. Vinn tilbake deres gunst, gjennopprett balansen, kom tilbake til de levendes verden - og finn Apollos Lyre.'
 	}
 } as const
 
@@ -133,7 +133,7 @@ const en = {
 		}
 	},
 	Start: {
-		title: 'uu game - start',
+		title: 'uu game - intro',
 		overskrift: 'Welcome to Escape Room - Favor of the Gods!',
 		intro: [
 			'You were a soldier in the service of the Emperor. A loyal warrior, bound by oath and honor. As the empire faltered under warnings of war and famine, you were chosen for a mission only the bravest could undertake: to retrieve an ancient artifact - the Lyre of Apollo - hidden deep in a forgotten temple dedicated to the ancient gods.',
