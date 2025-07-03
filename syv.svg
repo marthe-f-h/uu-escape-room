@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- V (som to linjer som møtes i bunn) -->
+  <path d="M16 12 L24 52 L32 12" stroke="#4B3621" stroke-width="4" fill="none" />
+  <!-- I -->
+  <rect x="36" y="12" width="4" height="40" fill="#4B3621" />
+  <!-- I -->
+  <rect x="44" y="12" width="4" height="40" fill="#4B3621" />
+</svg>
