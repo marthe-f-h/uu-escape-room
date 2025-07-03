@@ -1,34 +1,41 @@
 import { BodyLong, TextField } from '@navikt/ds-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
-import { marsUrl } from '../../constants'
-import { SekkBeholdingTyper } from '../sekken'
+import { minervaUrl } from '../../constants'
+import { getBeholdning } from '../sekken'
 
-export const Venus = () => {
+export const Minerva = () => {
 	const { text, setSekkBeholdning } = useAppContext()
-	const t = text.Venus
+	const t = text.Minerva
 
 	const [kode, setKode] = useState('')
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
 	const brukKode = (testKode: string) => {
-		const harRiktigKode =
-			testKode.trim().toLocaleLowerCase() === 'lyset' ||
-			testKode.trim() === 'fbsat'
+		const harRiktigKode = testKode.trim().toLocaleLowerCase() === 'mars'
 		if (harRiktigKode) {
-			setSekkBeholdning([SekkBeholdingTyper.Krukke])
+			setSekkBeholdning(getBeholdning('Minerva'))
 		}
 		setHarRiktigKode(harRiktigKode)
 	}
 
+	useEffect(() => {
+		setSekkBeholdning(getBeholdning('Minerva'))
+	}, [setSekkBeholdning])
+
 	return (
 		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
 			<div>
-				<BodyLong className="whitespace-pre-wrap mb-4">
-					{t.oppgave.join('\r\n')}
+				<BodyLong className="mb-4">
+					{t.oppgave}
 				</BodyLong>
+
+				<BodyLong className="mb-4">
+					{t.gaate}
+				</BodyLong>
+
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -52,7 +59,7 @@ export const Venus = () => {
 				harRiktigKode={harRiktigKode}
 				text={text}
 				gave={t.gave}
-				nesteUrl={marsUrl}
+				nesteUrl={minervaUrl}
 			/>
 		</OppgaveWrapper>
 	)

@@ -91,16 +91,47 @@ const no = {
 	Mars: {
 		title: 'uu spill - Mars',
 		overskrift: 'En gåte fra Mars',
-		oppgave: ['TODO tabell'],
+		oppgave:
+			'Mars gir deg oversikten over de siste slagene, men den er vanskelig å se.',
+		tabellHeadere: ['Slag', 'Legion', 'Utfall'],
+		tabellData: [
+			{ slag: 'Alesia', legion: 'Legio Mars', utfall: 'Seier' },
+			{
+				slag: 'Teutoburgerskogen',
+				legion: 'Legio Draconis',
+				utfall: 'Tap'
+			},
+			{ slag: 'Actium', legion: 'Legio Mars', utfall: 'Seier' },
+			{ slag: 'Carrhae', legion: 'Legio Mars', utfall: 'Seier' },
+			{ slag: 'Zela', legion: 'Legio Ferrata', utfall: 'Tap' },
+			{ slag: 'Philippi', legion: 'Legio Mars', utfall: 'Seier' },
+			{ slag: 'Arausio', legion: 'Legio Mars', utfall: 'Seier' },
+			{ slag: 'Gergovia', legion: 'Legio Mercurii', utfall: 'Seier' },
+			{ slag: 'Genovia', legion: 'Legio Mia', utfall: 'Seier' },
+			{ slag: 'Munda', legion: 'Legio Mars', utfall: 'Seier' },
+			{ slag: 'Arendell', legion: 'Legio Elsa', utfall: 'Seier' },
+			{ slag: 'Rappe', legion: 'Legio Ferrata', utfall: 'Seier' },
+			{ slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Seier' }
+		],
 		oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
 		gave: 'Mars gir deg et sverd som du kan ta med deg på vegen videre. (Du finner det i sekken)'
+	},
+	Minerva: {
+		title: 'uu spill - Minerva',
+		overskrift: 'En gåte fra Minerva',
+		oppgave:
+			'Minerva møter deg og viser deg veien til et rom med tre statuer. Statuene er av gudene Apollo, Merkur og Mars. Hver statue holder en tavle, der en er sannferdig, en lyver, og en kan vi ikke vite om sier sannhet eller løgn.',
+		gaate: 'Første statue er ved Appollo, tavlen sier Merkur er den sannferdige. Ved merkur sin tavle står det: "Jeg er ikke sannferdig" Ved Mars sin tavle står det at Merkur er løgneren.',
+		oppgaveLabel: 'Hvem er den sannferdige?',
+		gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Sekken: {
 		overskrift: 'Sekken',
 		tomt: 'Tomt...',
 		Krukke: 'Krukke',
 		Pergament: 'Pergament',
-		Sverd: 'Sverd'
+		Sverd: 'Sverd',
+		Hjelm: 'Hjelm'
 	},
 	kode: {
 		feil: 'Koden er feil!',
@@ -196,16 +227,48 @@ const en = {
 	Mars: {
 		title: 'uu spill - Mars',
 		overskrift: 'A riddle from Mars',
-		oppgave: ['TODO tabel'],
+		oppgave: [
+			'Mars gives you an overview of the latest battles, but it is hard to see.'
+		],
+		tabellHeadere: ['Battle', 'Legion', 'Outcome'],
+		tabellData: [
+			{ slag: 'Alesia', legion: 'Legio Mars', utfall: 'Victory' },
+			{
+				slag: 'Teutoburg Forest',
+				legion: 'Legio Draconis',
+				utfall: 'Defeat'
+			},
+			{ slag: 'Actium', legion: 'Legio Mars', utfall: 'Victory' },
+			{ slag: 'Carrhae', legion: 'Legio Mars', utfall: 'Victory' },
+			{ slag: 'Zela', legion: 'Legio Ferrata', utfall: 'Defeat' },
+			{ slag: 'Philippi', legion: 'Legio Mars', utfall: 'Victory' },
+			{ slag: 'Arausio', legion: 'Legio Mars', utfall: 'Victory' },
+			{ slag: 'Gergovia', legion: 'Legio Mercurii', utfall: 'Victory' },
+			{ slag: 'Genovia', legion: 'Legio Mia', utfall: 'Victory' },
+			{ slag: 'Munda', legion: 'Legio Mars', utfall: 'Victory' },
+			{ slag: 'Arendell', legion: 'Legio Elsa', utfall: 'Victory' },
+			{ slag: 'Rappe', legion: 'Legio Ferrata', utfall: 'Victory' },
+			{ slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Victory' }
+		],
 		oppgaveLabel: 'How many victories does the Legion of Mars have?',
 		gave: 'Mars gives you a sword that you can take with you on your journey. (You will find it in your backpack)'
+	},
+	Minerva: {
+		title: 'uu spill - Minerva',
+		overskrift: 'A riddle from Minerva',
+		oppgave:
+			'Minerva meets you and shows you the way to a room with three statues. The statues are of the gods Apollo, Mercury, and Mars. Each statue holds a tablet, one is truthful, one lies, and one we cannot know if it speaks truth or lies.',
+		gaate: 'The first statue is Apollo, the tablet says Mercury is the truthful one. By Mercury\'s tablet it says: "I am not truthful". By Mars\' tablet it says that Mercury is the liar.',
+		oppgaveLabel: 'Who is the truthful one?',
+		gave: 'Minerva gives you a helmet that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Sekken: {
 		overskrift: 'Backpack',
 		tomt: 'Empty...',
 		Krukke: 'Jar',
 		Pergament: 'Parchment',
-		Sverd: 'Sword'
+		Sverd: 'Sword',
+		Hjelm: 'Helmet'
 	},
 	kode: {
 		feil: 'The code is incorrect!',

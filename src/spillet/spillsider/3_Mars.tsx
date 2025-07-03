@@ -1,9 +1,10 @@
-import { BodyLong, BodyShort, Heading, Link, TextField } from '@navikt/ds-react'
-import { useEffect, useRef, useState } from 'react'
-import { Link as RouterLink } from 'react-router-dom'
+import { BodyLong, Table, TextField } from '@navikt/ds-react'
+import { useEffect, useState } from 'react'
 import { useAppContext } from '../../AppContext'
-import { marsUrl } from '../../constants'
-import { SekkBeholdingTyper } from '../sekken'
+import { OppgaveWrapper } from '../../components/OppgaveWrapper'
+import { ResultatBox } from '../../components/ResultatBox'
+import { minervaUrl } from '../../constants'
+import { getBeholdning } from '../sekken'
 
 export const Mars = () => {
 	const { text, setSekkBeholdning } = useAppContext()
@@ -13,40 +14,45 @@ export const Mars = () => {
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 
 	const brukKode = (testKode: string) => {
-		const harRiktigKode =
-			testKode.trim().toLocaleLowerCase() === 'vii'
+		const harRiktigKode = testKode.trim().toLocaleLowerCase() === 'vii'
 		if (harRiktigKode) {
-			setSekkBeholdning([SekkBeholdingTyper.Krukke, SekkBeholdingTyper.Sverd])
+			setSekkBeholdning(getBeholdning('Minerva'))
 		}
 		setHarRiktigKode(harRiktigKode)
 	}
 
-	document.title = t.title
-	const headingRef = useRef<HTMLHeadingElement>(null)
-
 	useEffect(() => {
-		if (headingRef.current) {
-			headingRef.current.focus()
-		}
-	}, [])
+		setSekkBeholdning(getBeholdning('Mars'))
+	}, [setSekkBeholdning])
 
 	return (
-		<div className="h-screen overflow-auto p-4 pl-6 golden-panel grid grid-cols-[60%_1px_1fr] gap-4">
+		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
 			<div>
-				<div>
-					<Heading
-						level="1"
-						size="small"
-						className="text-3xl mb-4 outline-none"
-						tabIndex={-1}
-						ref={headingRef}
-					>
-						{t.overskrift}
-					</Heading>
-				</div>
-				<BodyLong className="whitespace-pre-wrap mb-4">
-					{t.oppgave}
-				</BodyLong>
+				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
+
+				<Table size="small" className="mb-4 blur">
+					<Table.Header>
+						<Table.Row>
+							{t.tabellHeadere.map((header, index) => (
+								<Table.HeaderCell scope="col" key={index}>
+									{header}
+								</Table.HeaderCell>
+							))}
+						</Table.Row>
+					</Table.Header>
+					<Table.Body>
+						{t.tabellData.map((row, index) => (
+							<Table.Row key={index}>
+								<Table.HeaderCell scope="row">
+									{row.slag}
+								</Table.HeaderCell>
+								<Table.DataCell>{row.legion}</Table.DataCell>
+								<Table.DataCell>{row.utfall}</Table.DataCell>
+							</Table.Row>
+						))}
+					</Table.Body>
+				</Table>
+
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -66,30 +72,12 @@ export const Mars = () => {
 				</form>
 			</div>
 
-			<div className="bg-[#4b3e2a]" />
-
-			<div>
-				{harRiktigKode && (
-					<div className="mt-4" role="alert">
-						<BodyShort>{text.kode.rett}</BodyShort>
-						<BodyShort className="mt-2">
-							{t.gave}
-						</BodyShort>
-						<Link
-							as={RouterLink}
-							to={marsUrl}
-							className="gold-button mt-4"
-						>
-							{text.kode.videre}
-						</Link>
-					</div>
-				)}
-				{harRiktigKode === false && (
-					<div className="mt-4" role="alert">
-						{text.kode.feil}
-					</div>
-				)}
-			</div>
-		</div>
+			<ResultatBox
+				harRiktigKode={harRiktigKode}
+				text={text}
+				gave={t.gave}
+				nesteUrl={minervaUrl}
+			/>
+		</OppgaveWrapper>
 	)
 }
