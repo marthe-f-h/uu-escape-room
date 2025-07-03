@@ -18,7 +18,7 @@ export const SkjermleserKommandoer = () => {
 				{t.overskrift}
 			</button>
 			{open && (
-				<div className="flex gap-4 mt-1">
+				<div className="flex gap-4 p-4 border-l border-b border-r border-[#d8a33c] rounded-b-md">
 					<Tabs
 						defaultValue="voiceover"
 						size="small"

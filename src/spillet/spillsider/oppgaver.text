@@ -1,14 +1,9 @@
 Mulige oppgaver:
 
 1: Venus. Kjærlighet og møsnter. Finn skjult mening i et dikt.
-Langt nede, hvor skygger svøper sinn
-Yrende liv er kun ett minne
-Sjelene vandrer, men veien er smal
-Et ekko av stillhet er alt å finne
-Tiden bøyer seg for de ærlige tapre
-SVAR: LYSET
 
-2: Mars. Krigsstrategi. Tabell med romerske Legioner og kamper. Hvilken legion vant?
+2: Mars. Krigsstrategi. Tabell med romerske Legioner og kamper.
+Hvor mange seirere? svare i romertall
 
 3: Minervas. Visdom og logikk. Logisk gåte med radiobuttons valg.
 Tre statuer av Guden Apollo, Merkur og Mars står i rommet.
@@ -31,7 +26,7 @@ Stenen med Veritas vincit / sannhetsymbol er riktig valg.
 7: Jupiter. moral.
 
 
-Ha en "sekk" med ting. kan være en footer med synlige elementer. kan trykke på dem og da åpnes en modal for å inspisere hver ting?
+Ha en "sekk" med ting. kan trykke på dem og da åpnes en modal for å inspisere hver ting?
 Ev en del av sidebaren viser elementene i sekken og et annet felt har det valgte elementet alltid åpent?
 
 Få dekoder (hjul / tabell som kan sorteres?) en sirkel med romertall, en annen med bokstaver/tall?
@@ -44,3 +39,6 @@ På den måten må ikke spillerne gå tilbake å finne, eller gå glipp av hint.
 kan og få tilgang til et rom med gjenstander de må lete i?
 
 Skriftrull: Kun sannhet og rettferd kan veie like mye som liv og død.
+
+Kan vi legge til hint på siden hvis de har vært på en page litt for lenge?
+sett sekkebeholding per side, i tilfelle de refresher og ikke mister alt i sekken....

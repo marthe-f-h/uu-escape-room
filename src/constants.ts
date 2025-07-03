@@ -1,3 +1,10 @@
 export const basePath = '/uu-escape-room'
 export const testUrl = `${basePath}/test`
 export const startUrl = `${basePath}/intro`
+export const venusUrl = `${basePath}/venus`
+export const marsUrl = `${basePath}/mars`
+export const minervaUrl = `${basePath}/minerva`
+export const merkurUrl = `${basePath}/merkur`
+export const plutoUrl = `${basePath}/pluto`
+export const neptunUrl = `${basePath}/neptun`
+export const jupiterUrl = `${basePath}/jupiter`

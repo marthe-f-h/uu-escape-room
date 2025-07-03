@@ -1,12 +1,14 @@
 import { useEffect } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import { SprakVelger } from './components/SprakVelger'
-import { basePath, startUrl, testUrl } from './constants'
+import { Sekken } from './components/Sekken'
 import { SkjermleserKommandoer } from './components/SkjermleserKommandoer'
+import { SprakVelger } from './components/SprakVelger'
+import { basePath, marsUrl, startUrl, testUrl, venusUrl } from './constants'
 import { Velkomstside } from './spillet/Velkomstside'
 import { Start } from './spillet/spillsider/1_Start'
+import { Venus } from './spillet/spillsider/2_Venus'
 import { TestSide } from './spillet/testsider/TestSide'
-import { Sekken } from './components/Sekken'
+import { Mars } from './spillet/spillsider/3_Mars'
 
 export const App = () => {
 	const navigate = useNavigate()
@@ -36,6 +38,8 @@ export const App = () => {
 					<Route path={basePath} element={<Velkomstside />} />
 					<Route path={testUrl} element={<TestSide />} />
 					<Route path={startUrl} element={<Start />} />
+					<Route path={venusUrl} element={<Venus />} />
+					<Route path={marsUrl} element={<Mars />} />
 				</Routes>
 			</main>
 		</div>

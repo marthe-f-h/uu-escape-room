@@ -2,6 +2,7 @@ import { Heading, Link } from '@navikt/ds-react'
 import { useEffect, useRef } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { useAppContext } from '../../AppContext'
+import { venusUrl } from '../../constants'
 
 export const Start = () => {
 	const t = useAppContext().text.Start
@@ -34,7 +35,7 @@ export const Start = () => {
 				))}
 				<p className="mt-2">{t.mal}</p>
 			</div>
-			<Link className="mt-8" as={RouterLink} to={''}>
+			<Link as={RouterLink} to={venusUrl} className="gold-button mt-8">
 				Er du klar? Begynn prøven
 			</Link>
 		</div>

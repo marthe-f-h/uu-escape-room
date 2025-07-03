@@ -75,9 +75,38 @@ const no = {
 		],
 		mal: 'Finn veien gjennom prøvelsene gudene har lagt foran deg. Vinn tilbake deres gunst, gjennopprett balansen, kom tilbake til de levendes verden - og finn Apollos Lyre.'
 	},
+	Venus: {
+		title: 'uu spill - Venus',
+		overskrift: 'En gåte fra Venus',
+		oppgave: [
+			'Langt nede, hvor skygger svøper sinn',
+			'Yrende liv er kun ett minne',
+			'Sjelene vandrer, men veien er smal',
+			'Et ekko av stillhet er alt å finne',
+			'Tiden bøyer seg for de ærlige tapre'
+		],
+		oppgaveLabel: 'Hva er koden?',
+		gave: 'Venus gir eg en keramikkkurkke som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+	},
+	Mars: {
+		title: 'uu spill - Mars',
+		overskrift: 'En gåte fra Mars',
+		oppgave: ['TODO tabell'],
+		oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
+		gave: 'Mars gir deg et sverd som du kan ta med deg på vegen videre. (Du finner det i sekken)'
+	},
 	Sekken: {
 		overskrift: 'Sekken',
-		tomt: 'Samle ting du trenger i løpet av spillet.'
+		tomt: 'Tomt...',
+		Krukke: 'Krukke',
+		Pergament: 'Pergament',
+		Sverd: 'Sverd'
+	},
+	kode: {
+		feil: 'Koden er feil!',
+		rett: 'Koden er riktig!',
+		videre: 'Gå videre',
+		provKoden: 'Prøv koden'
 	}
 } as const
 
@@ -151,9 +180,38 @@ const en = {
 		],
 		mal: 'Find your way through the trials the gods have set before you. Regain their favor, restore balance, return to the world of the living - and find the Lyre of Apollo.'
 	},
+	Venus: {
+		title: 'uu spill - Venus',
+		overskrift: 'A riddle from Venus',
+		oppgave: [
+			'Far below, where shadows shroud the mind',
+			'Bustling life is just a memory',
+			'Souls wander, but the path is narrow',
+			'An echo of silence is all there is to find',
+			'Time bows to the honest brave'
+		],
+		oppgaveLabel: 'What is the code?',
+		gave: 'Venus gives you a ceramic jar that you can take with you on your journey. (You will find it in your backpack)'
+	},
+	Mars: {
+		title: 'uu spill - Mars',
+		overskrift: 'A riddle from Mars',
+		oppgave: ['TODO tabel'],
+		oppgaveLabel: 'How many victories does the Legion of Mars have?',
+		gave: 'Mars gives you a sword that you can take with you on your journey. (You will find it in your backpack)'
+	},
 	Sekken: {
 		overskrift: 'Backpack',
-		tomt: 'Collect items you need during the game.'
+		tomt: 'Empty...',
+		Krukke: 'Jar',
+		Pergament: 'Parchment',
+		Sverd: 'Sword'
+	},
+	kode: {
+		feil: 'The code is incorrect!',
+		rett: 'The code is correct!',
+		videre: 'Go further',
+		provKoden: 'Try the code'
 	}
 } as const
 

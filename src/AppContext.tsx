@@ -1,11 +1,14 @@
 import { createContext, useContext, useState } from 'react'
 import type { Language, Texts } from './texts'
 import getTexts from './texts'
+import type { SekkBeholdingType } from './spillet/sekken'
 
 export interface AppContextProps {
 	text: Texts
 	selectedLanguage: Language
+	sekkBeholdning: SekkBeholdingType[]
 	setSelectedLanguge: React.Dispatch<React.SetStateAction<Language>>
+	setSekkBeholdning: React.Dispatch<React.SetStateAction<SekkBeholdingType[]>>
 }
 
 const AppContext = createContext<AppContextProps | undefined>(undefined)
@@ -32,11 +35,19 @@ const AppContextProvider = ({
 	const [selectedLanguage, setSelectedLanguge] = useState(
 		initialSelectedLanguage
 	)
+	const [sekkBeholdning, setSekkBeholdning] = useState<SekkBeholdingType[]>(
+		[]
+	)
 
 	const contextValue: AppContextProps = {
 		selectedLanguage,
-		text: selectedLanguage === 'norsk' ? getTexts('norsk') : getTexts('engelsk'),
-		setSelectedLanguge
+		text:
+			selectedLanguage === 'norsk'
+				? getTexts('norsk')
+				: getTexts('engelsk'),
+		sekkBeholdning,
+		setSelectedLanguge,
+		setSekkBeholdning
 	}
 
 	return (
