@@ -26,7 +26,7 @@ export const App = () => {
 				gridTemplateColumns: '20rem auto'
 			}}
 		>
-			<aside className="meny flex flex-col gap-4">
+			<aside className="blue_box meny flex flex-col gap-4">
 				<SprakVelger />
 				<SkjermleserKommandoer />
 				<Sekken />

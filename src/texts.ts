@@ -5,6 +5,8 @@ const getTexts = (language: Language) => {
 const no = {
 	Velkomstside: {
 		velkommen: 'Velkommen til Escape Room - Gudenes gunst!',
+		beskrivelse:
+			'Dette er et spill for å lære å bruke skjermleser. For å løse escape room oppgavene må du bruke skjermleser for å få med deg hintene og navigere i spillet. Noen sider kan du se blurret, andre kan du ikke se noen ting. Lykke til!',
 		test: 'Test skjermleser',
 		startLink: 'Start spillet'
 	},
@@ -83,6 +85,8 @@ const en = {
 	Velkomstside: {
 		velkommen: 'Welcome to Escape Room - Favor of the Gods!',
 		test: 'Test screen reader',
+		beskrivelse:
+			'This is a game to learn how to use a screen reader. To solve the escape room puzzles you will need to use a screen reader to get the hints and navigate the game. Some pages you may see a slightly blurred image, others you may not be able to see anything. Good luck!',
 		startLink: 'Start the game'
 	},
 	TestSide: {

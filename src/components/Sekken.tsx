@@ -15,11 +15,7 @@ export const Sekken = () => {
 			>
 				{t.overskrift}
 			</button>
-			{open && (
-				<div className="flex gap-4 mt-1">
-					Her kan du smale ting du trenger i løpet av spillet.
-				</div>
-			)}
+			{open && <div className="flex gap-4 mt-1">{t.tomt}</div>}
 		</div>
 	)
 }
