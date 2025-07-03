@@ -24,7 +24,7 @@ export const TestSide = () => {
 	}, [])
 
 	return (
-		<div className="flex flex-col gap-4 bg-white h-screen overflow-auto p-4 pl-6 text-black">
+		<div className="flex flex-col gap-4 h-screen overflow-auto p-4 pl-6 golden-panel">
 			<Heading
 				level="1"
 				size="medium"

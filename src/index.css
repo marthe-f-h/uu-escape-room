@@ -1,2 +1,106 @@
 @import 'tailwindcss';
 @import '@navikt/ds-css' layer(components);
+
+body {
+	background-color: #121219;
+	font-family: 'Cinzel', serif;
+	color: #4b3e2a;
+}
+
+:root {
+  --meny-text-color: #ffe1aa;
+}
+
+.gold-button {
+	padding: 0.5rem 1rem;
+	font-family: 'Cinzel', serif;
+	color: #f6d08a;
+	background: #05253a;
+	border: 3px solid #d8a33c;
+  border-radius: 8px;
+	width: fit-content;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.gold-button:hover {
+	background: #031521;
+}
+.gold-button:active {
+	transform: scale(0.97);
+	background: linear-gradient(to bottom, #141e27, #0c1217);
+}
+
+.button-1 {
+	padding: 0.5rem 1rem;
+	font-family: 'Cinzel', serif;
+	color: #f6d08a;
+	cursor: pointer;
+
+	--border-size: 3px;
+	--border-color: #b78825;
+	--corner-radius: 10px;
+	--background-color: #05253a;
+
+	--br: calc(var(--corner-radius) + var(--border-size));
+	--border-bg: radial-gradient(
+			circle at var(--br) var(--br),
+			var(--border-color) calc(var(--br) - 1px),
+			#0000 var(--br)
+		)
+		calc(var(--br) * -1) calc(var(--br) * -1) border-box;
+	--mr: var(--corner-radius);
+	--mask: radial-gradient(
+			circle at var(--mr) var(--mr),
+			#0000 calc(var(--mr) - 1px),
+			#000 var(--mr)
+		)
+		calc(var(--mr) * -1) calc(var(--mr) * -1);
+
+	border: var(--border-size) solid var(--border-color);
+	background: var(--border-bg);
+	background-color: var(--background-color);
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+.meny {
+	background: #05253a;
+	border: 3px solid #d4a53a;
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 1rem;
+	height: 95vh;
+	color: var(--meny-text-color);
+}
+
+.meny-knapp{
+  padding: 0.5rem 1rem;
+  font-family: 'Cinzel', serif;
+  color: #05253a;
+  background: #ffe1aa;
+  border: 2px solid #d8a33c;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.golden-panel {
+  background: linear-gradient(to bottom, #f1ead7, #ecdfc2);
+	border: 3px solid #d4a53a;
+	border-radius: 12px;
+	padding: 0.5rem;
+	margin: 1rem;
+	color: #4b3e2a;
+  height: 80vh;
+}
+
+.navds-radio:hover {
+	color: #fff9ec;
+  & label {
+    color: #fff9ec;
+  }
+}
+
+.navds-tabs__tab, .navds-list__item-marker--bullet {
+	color: var(--meny-text-color);
+}

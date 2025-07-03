@@ -16,7 +16,7 @@ export const Start = () => {
 	}, [])
 
 	return (
-		<div className="bg-white h-screen overflow-auto p-4 pl-6 text-black">
+		<div className="h-screen overflow-auto p-4 pl-6 golden-panel">
 			<div>
 				<Heading
 					level="1"

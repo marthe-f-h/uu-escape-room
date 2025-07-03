@@ -25,7 +25,7 @@ const no = {
 		kiwi: 'Kiwi'
 	},
 	SkjermleserKommandoer: {
-		overskrift: 'Nyttige skjermleserkommandoer',
+		overskrift: 'Skjermleserkommandoer',
 		voiceover: {
 			label: 'Voiceover',
 			kommandoer: [
@@ -72,6 +72,10 @@ const no = {
 			'Men alt håp er ikke tapt. Gudene er lunefulle, men ikke døve for mot. Du har én sjanse: Bevis din verdighet ved å fullføre prøvelsene de har lagt foran deg. Kunnskap, styrke og klokskap vil føre deg gjennom mørket.'
 		],
 		mal: 'Finn veien gjennom prøvelsene gudene har lagt foran deg. Vinn tilbake deres gunst, gjennopprett balansen, kom tilbake til de levendes verden - og finn Apollos Lyre.'
+	},
+	Sekken: {
+		overskrift: 'Sekken',
+		tomt: 'Samle ting du trenger i løpet av spillet.'
 	}
 } as const
 
@@ -98,7 +102,7 @@ const en = {
 		kiwi: 'Kiwi'
 	},
 	SkjermleserKommandoer: {
-		overskrift: 'Useful screen reader commands',
+		overskrift: 'Screen reader commands',
 		voiceover: {
 			label: 'Voiceover',
 			kommandoer: [
@@ -142,6 +146,10 @@ const en = {
 			'But all hope is not lost. The gods are capricious, but not deaf to courage. You have one chance: prove your worth by completing the trials they have set before you. Knowledge, strength, and wisdom will guide you through the darkness.'
 		],
 		mal: 'Find your way through the trials the gods have set before you. Regain their favor, restore balance, return to the world of the living - and find the Lyre of Apollo.'
+	},
+	Sekken: {
+		overskrift: 'Backpack',
+		tomt: 'Collect items you need during the game.'
 	}
 } as const
 

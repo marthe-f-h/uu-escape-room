@@ -1,18 +1,14 @@
 import { useEffect } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import { useAppContext } from './AppContext'
-import {
-  basePath,
-  startUrl,
-  testUrl
-} from './constants'
-import { SkjermleserKommandoer } from './spillet/SkjermleserKommandoer'
+import { SprakVelger } from './components/SprakVelger'
+import { basePath, startUrl, testUrl } from './constants'
+import { SkjermleserKommandoer } from './components/SkjermleserKommandoer'
 import { Velkomstside } from './spillet/Velkomstside'
-import { TestSide } from './spillet/testsider/TestSide'
 import { Start } from './spillet/spillsider/1_Start'
+import { TestSide } from './spillet/testsider/TestSide'
+import { Sekken } from './components/Sekken'
 
 export const App = () => {
-	const { selectedLanguage } = useAppContext()
 	const navigate = useNavigate()
 
 	useEffect(() => {
@@ -25,30 +21,21 @@ export const App = () => {
 
 	return (
 		<div
-			className={`grid ${
-				selectedLanguage === 'norsk' ? 'bg-[#004367]' : 'bg-[#666E00]'
-			} `}
+			className="grid"
 			style={{
-				gridTemplateColumns: '18rem auto'
+				gridTemplateColumns: '20rem auto'
 			}}
 		>
-			<aside>
-				 <SkjermleserKommandoer />
+			<aside className="meny flex flex-col gap-4">
+				<SprakVelger />
+				<SkjermleserKommandoer />
+				<Sekken />
 			</aside>
 			<main>
 				<Routes>
-					<Route
-						path={basePath}
-						element={ <Velkomstside /> }
-					/>
-					<Route
-						path={testUrl}
-						element={<TestSide />}
-					/>
-					<Route
-						path={startUrl}
-						element={ <Start /> }
-					/>
+					<Route path={basePath} element={<Velkomstside />} />
+					<Route path={testUrl} element={<TestSide />} />
+					<Route path={startUrl} element={<Start />} />
 				</Routes>
 			</main>
 		</div>

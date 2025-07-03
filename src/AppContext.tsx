@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react'
-import type { Language, Texts } from './texts_no'
-import getTexts from './texts_no'
+import type { Language, Texts } from './texts'
+import getTexts from './texts'
 
 export interface AppContextProps {
 	text: Texts
