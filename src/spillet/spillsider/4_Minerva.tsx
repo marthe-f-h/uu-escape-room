@@ -1,49 +1,46 @@
 import { BodyLong, TextField } from '@navikt/ds-react'
-import { useEffect, useState } from 'react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { minervaUrl } from '../../constants'
-import { getBeholdning } from '../sekken'
+import imgApollo from '../bilder/Apollo.png'
+import imgMars from '../bilder/Mars.png'
+import imgMerkur from '../bilder/Merkur.jpg'
+import { useKode } from '../useKode'
 
 export const Minerva = () => {
-	const { text, setSekkBeholdning } = useAppContext()
+	const { text } = useAppContext()
 	const t = text.Minerva
 
-	const [kode, setKode] = useState('')
-	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
-
-	const brukKode = (testKode: string) => {
-		const harRiktigKode = testKode.trim().toLocaleLowerCase() === 'mars'
-		if (harRiktigKode) {
-			setSekkBeholdning(getBeholdning('Minerva'))
-		}
-		setHarRiktigKode(harRiktigKode)
-	}
-
-	useEffect(() => {
-		setSekkBeholdning(getBeholdning('Minerva'))
-	}, [setSekkBeholdning])
+	const { kode, harRiktigKode, setKode, brukKode } = useKode(
+		['mars'],
+		'Neptun'
+	)
 
 	return (
 		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
 			<div>
-				<BodyLong className="mb-4">
-					{t.oppgave}
-				</BodyLong>
+				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
 
-				<BodyLong className="mb-4">
-					{t.gaate}
-				</BodyLong>
+				<div className="flex mb-4">
+					<img src={imgMars} className="h-24" alt={t.bilder[0]} />
+					<img src={imgMerkur} alt={t.bilder[1]} className="h-24" />
+					<img
+						src={imgApollo}
+						className="h-24 ml-[-1px]"
+						alt={t.bilder[2]}
+					/>
+				</div>
 
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
-						brukKode(kode)
+						brukKode()
 					}}
 				>
 					<TextField
 						label={t.oppgaveLabel}
+						description={t.tidsstraff}
 						size="small"
 						className="w-[20rem]"
 						value={kode}

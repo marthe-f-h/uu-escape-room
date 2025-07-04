@@ -1,32 +1,25 @@
 import { BodyLong, Table, TextField } from '@navikt/ds-react'
-import { useEffect, useState } from 'react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { minervaUrl } from '../../constants'
-import { getBeholdning } from '../sekken'
+import { useKode } from '../useKode'
 
 export const Mars = () => {
-	const { text, setSekkBeholdning } = useAppContext()
+	const { text } = useAppContext()
 	const t = text.Mars
 
-	const [kode, setKode] = useState('')
-	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
-
-	const brukKode = (testKode: string) => {
-		const harRiktigKode = testKode.trim().toLocaleLowerCase() === 'vii'
-		if (harRiktigKode) {
-			setSekkBeholdning(getBeholdning('Minerva'))
-		}
-		setHarRiktigKode(harRiktigKode)
-	}
-
-	useEffect(() => {
-		setSekkBeholdning(getBeholdning('Mars'))
-	}, [setSekkBeholdning])
+	const { kode, harRiktigKode, setKode, brukKode } = useKode(
+		['vii'],
+		'Minerva'
+	)
 
 	return (
-		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
+		<OppgaveWrapper
+			title={t.title}
+			overskrift={t.overskrift}
+			hints={[t.hint]}
+		>
 			<div>
 				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
 
@@ -56,7 +49,7 @@ export const Mars = () => {
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
-						brukKode(kode)
+						brukKode()
 					}}
 				>
 					<TextField

@@ -1,30 +1,25 @@
-import { BodyLong, TextField } from '@navikt/ds-react'
-import { useState } from 'react'
+import { BodyLong, Heading, TextField } from '@navikt/ds-react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { marsUrl } from '../../constants'
-import { SekkBeholdingTyper } from '../sekken'
+import { useKode } from '../useKode'
 
 export const Venus = () => {
-	const { text, setSekkBeholdning } = useAppContext()
+	const { text } = useAppContext()
 	const t = text.Venus
 
-	const [kode, setKode] = useState('')
-	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
-
-	const brukKode = (testKode: string) => {
-		const harRiktigKode =
-			testKode.trim().toLocaleLowerCase() === 'lyset' ||
-			testKode.trim() === 'fbsat'
-		if (harRiktigKode) {
-			setSekkBeholdning([SekkBeholdingTyper.Krukke])
-		}
-		setHarRiktigKode(harRiktigKode)
-	}
+	const { kode, harRiktigKode, setKode, brukKode } = useKode(
+		['lyset', 'fbsat'],
+		'Mars'
+	)
 
 	return (
-		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
+		<OppgaveWrapper
+			title={t.title}
+			overskrift={t.overskrift}
+			hints={[t.hint, t.hint2]}
+		>
 			<div>
 				<BodyLong className="whitespace-pre-wrap mb-4">
 					{t.oppgave.join('\r\n')}
@@ -32,7 +27,7 @@ export const Venus = () => {
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
-						brukKode(kode)
+						brukKode()
 					}}
 				>
 					<TextField
@@ -46,6 +41,13 @@ export const Venus = () => {
 						{text.kode.provKoden}
 					</button>
 				</form>
+
+				<div className="sr-only">
+					<Heading size="small" level="2">
+						Hint
+					</Heading>
+					<BodyLong className="mt-4">{t.hint}</BodyLong>
+				</div>
 			</div>
 
 			<ResultatBox

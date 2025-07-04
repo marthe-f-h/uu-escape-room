@@ -13,7 +13,7 @@ export const ResultatBox = ({ harRiktigKode, text, gave, nesteUrl }: Props) => {
 	return (
 		<div>
 			{harRiktigKode && (
-				<div className="mt-4" role="alert">
+				<div className="mt-4" role="alert" aria-atomic="true">
 					<BodyShort>{text.kode.rett}</BodyShort>
 					<BodyShort className="mt-2">{gave}</BodyShort>
 					<Link
@@ -26,7 +26,7 @@ export const ResultatBox = ({ harRiktigKode, text, gave, nesteUrl }: Props) => {
 				</div>
 			)}
 			{harRiktigKode === false && (
-				<div className="mt-4" role="alert">
+				<div className="mt-4" role="alert" aria-atomic="true">
 					{text.kode.feil}
 				</div>
 			)}

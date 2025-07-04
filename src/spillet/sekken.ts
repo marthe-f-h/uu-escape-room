@@ -8,16 +8,19 @@ export const SekkBeholdingTyper = {
 export type SekkBeholdingType =
 	(typeof SekkBeholdingTyper)[keyof typeof SekkBeholdingTyper]
 
-export const getBeholdning = (
-	oppgave:
-		| 'Venus'
-		| 'Mars'
-		| 'Jupiter'
-		| 'Neptun'
-		| 'Pluto'
-		| 'Minerva'
-		| 'Merkur'
-): SekkBeholdingType[] => {
+export const Guder = {
+	Venus: 'Venus',
+	Mars: 'Mars',
+	Minerva: 'Minerva',
+	Neptun: 'Neptun',
+	Pluto: 'Pluto',
+	Merkur: 'Merkur',
+	Jupiter: 'Jupiter'
+} as const
+
+export type Gud = (typeof Guder)[keyof typeof Guder]
+
+export const getBeholdning = (oppgave: Gud): SekkBeholdingType[] => {
 	switch (oppgave) {
 		case 'Venus':
 			return []

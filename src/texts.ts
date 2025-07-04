@@ -86,7 +86,9 @@ const no = {
 			'Tiden bøyer seg for de ærlige tapre'
 		],
 		oppgaveLabel: 'Hva er koden?',
-		gave: 'Venus gir eg en keramikkkurkke som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+		hint: 'Starten er viktigere enn det som kommer etter.',
+		hint2: 'Koden er på fem tegn.',
+		gave: 'Venus gir eg en keramikkrukke som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Mars: {
 		title: 'uu spill - Mars',
@@ -114,6 +116,7 @@ const no = {
 			{ slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Seier' }
 		],
 		oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
+		hint: 'Skriv slik en keiser ville ha skrevet det.',
 		gave: 'Mars gir deg et sverd som du kan ta med deg på vegen videre. (Du finner det i sekken)'
 	},
 	Minerva: {
@@ -121,8 +124,13 @@ const no = {
 		overskrift: 'En gåte fra Minerva',
 		oppgave:
 			'Minerva møter deg og viser deg veien til et rom med tre statuer. Statuene er av gudene Apollo, Merkur og Mars. Hver statue holder en tavle, der en er sannferdig, en lyver, og en kan vi ikke vite om sier sannhet eller løgn.',
-		gaate: 'Første statue er ved Appollo, tavlen sier Merkur er den sannferdige. Ved merkur sin tavle står det: "Jeg er ikke sannferdig" Ved Mars sin tavle står det at Merkur er løgneren.',
+		bilder: [
+			'Statue av Mars. Statuen holder en steintavle der det står: "Merkur er den sannferdige"',
+			'Statue av Merkur. Statuen holder en steintavle der det står: "Jeg er ikke sannferdig"',
+			'Statue av Apollo. Statuen holder en steintavle der det står: "Merkur er løgneren"'
+		],
 		oppgaveLabel: 'Hvem er den sannferdige?',
+		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
 		gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Sekken: {
@@ -222,6 +230,8 @@ const en = {
 			'Time bows to the honest brave'
 		],
 		oppgaveLabel: 'What is the code?',
+		hint: 'The beginning is more important than what comes after.',
+		hint2: 'The code is five characters long.',
 		gave: 'Venus gives you a ceramic jar that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Mars: {
@@ -251,6 +261,7 @@ const en = {
 			{ slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Victory' }
 		],
 		oppgaveLabel: 'How many victories does the Legion of Mars have?',
+		hint: 'Write as an emperor would have written it.',
 		gave: 'Mars gives you a sword that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Minerva: {
@@ -259,7 +270,14 @@ const en = {
 		oppgave:
 			'Minerva meets you and shows you the way to a room with three statues. The statues are of the gods Apollo, Mercury, and Mars. Each statue holds a tablet, one is truthful, one lies, and one we cannot know if it speaks truth or lies.',
 		gaate: 'The first statue is Apollo, the tablet says Mercury is the truthful one. By Mercury\'s tablet it says: "I am not truthful". By Mars\' tablet it says that Mercury is the liar.',
+		bilder: [
+			'Statue of Mars. The statue holds a stone tablet that says: "Mercury is the truthful one"',
+			'Statue of Mercury. The statue holds a stone tablet that says: "I am not truthful"',
+			'Statue of Apollo. The statue holds a stone tablet that says: "Mercury is the liar"'
+		],
 		oppgaveLabel: 'Who is the truthful one?',
+		tidsstraff:
+			'You will get a timeout of 30 seconds for an incorrect answer.',
 		gave: 'Minerva gives you a helmet that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Sekken: {
