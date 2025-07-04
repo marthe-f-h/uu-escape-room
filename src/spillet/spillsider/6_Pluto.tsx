@@ -7,12 +7,9 @@ import { useKode } from '../useKode'
 
 export const Pluto = () => {
 	const { text } = useAppContext()
-	const t = text.Minerva
+	const t = text.Pluto
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode(
-		[''],
-		'Jupiter'
-	)
+	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Jupiter')
 
 	return (
 		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
@@ -27,7 +24,6 @@ export const Pluto = () => {
 				>
 					<TextField
 						label={t.oppgaveLabel}
-						description={t.tidsstraff}
 						size="small"
 						className="w-[10rem]"
 						value={kode}

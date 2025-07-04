@@ -7,12 +7,9 @@ import { useKode } from '../useKode'
 
 export const Merkur = () => {
 	const { text } = useAppContext()
-	const t = text.Minerva
+	const t = text.Merkur
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode(
-		[''],
-		'Pluto'
-	)
+	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Pluto')
 
 	return (
 		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
@@ -27,7 +24,6 @@ export const Merkur = () => {
 				>
 					<TextField
 						label={t.oppgaveLabel}
-						description={t.tidsstraff}
 						size="small"
 						className="w-[10rem]"
 						value={kode}

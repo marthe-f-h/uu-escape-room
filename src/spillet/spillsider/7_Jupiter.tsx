@@ -7,7 +7,7 @@ import { useKode } from '../useKode'
 
 export const Jupiter = () => {
 	const { text } = useAppContext()
-	const t = text.Minerva
+	const t = text.Jupiter
 
 	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Jupiter')
 
@@ -24,7 +24,6 @@ export const Jupiter = () => {
 				>
 					<TextField
 						label={t.oppgaveLabel}
-						description={t.tidsstraff}
 						size="small"
 						className="w-[10rem]"
 						value={kode}

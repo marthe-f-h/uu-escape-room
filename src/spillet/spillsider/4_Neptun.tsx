@@ -7,9 +7,9 @@ import { useKode } from '../useKode'
 
 export const Neptun = () => {
 	const { text } = useAppContext()
-	const t = text.Minerva
+	const t = text.Neptun
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode(
+	const { kode, harRiktigKode, fryst, setKode, brukKode } = useKode(
 		[''],
 		'Merkur'
 	)
@@ -33,7 +33,7 @@ export const Neptun = () => {
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>
-					<button className="mt-4 gold-button">
+					<button className="mt-4 gold-button" disabled={fryst}>
 						{text.kode.provKoden}
 					</button>
 				</form>

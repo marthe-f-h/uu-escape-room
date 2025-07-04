@@ -146,6 +146,39 @@ const no = {
 		oppgaveLabel: 'Hvem er den sannferdige?',
 		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
 		gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+	},
+	Neptun: {
+		title: 'uu spill - Neptun',
+		overskrift: 'En gåte fra Neptun',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
+		gave: ''
+	},
+	Merkur: {
+		title: 'uu spill - Merkur',
+		overskrift: 'En gåte fra Merkur',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		gave: ''
+	},
+	Pluto: {
+		title: 'uu spill - Pluto',
+		overskrift: 'En gåte fra Pluto',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		gave: ''
+	},
+	Jupiter: {
+		title: 'uu spill - Jupiter',
+		overskrift: 'En gåte fra Jupiter',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		gave: ''
 	}
 } as const
 
@@ -293,6 +326,40 @@ const en = {
 		tidsstraff:
 			'You will get a timeout of 30 seconds for an incorrect answer.',
 		gave: 'Minerva gives you a helmet that you can take with you on your journey. (You will find it in your backpack)'
+	},
+	Neptun: {
+		title: 'uu game - Neptun',
+		overskrift: 'A riddle from Neptune',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		tidsstraff:
+			'You will get a timeout of 30 seconds for an incorrect answer.',
+		gave: ''
+	},
+	Merkur: {
+		title: 'uu game - Mercury',
+		overskrift: 'A riddle from Mercury',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		gave: ''
+	},
+	Pluto: {
+		title: 'uu game - Pluto',
+		overskrift: 'A riddle from Pluto',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		gave: ''
+	},
+	Jupiter: {
+		title: 'uu game - Jupiter',
+		overskrift: 'A riddle from Jupiter',
+		oppgave: '',
+		oppgaveLabel: '',
+		hint: '',
+		gave: ''
 	}
 } as const
 
