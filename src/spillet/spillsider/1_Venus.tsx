@@ -33,7 +33,7 @@ export const Venus = () => {
 					<TextField
 						label={t.oppgaveLabel}
 						size="small"
-						className="w-[20rem]"
+						className="w-[10rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>

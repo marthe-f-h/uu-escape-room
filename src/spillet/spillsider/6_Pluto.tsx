@@ -19,7 +19,6 @@ export const Pluto = () => {
 			<div>
 				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
 
-
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -30,7 +29,7 @@ export const Pluto = () => {
 						label={t.oppgaveLabel}
 						description={t.tidsstraff}
 						size="small"
-						className="w-[20rem]"
+						className="w-[10rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>

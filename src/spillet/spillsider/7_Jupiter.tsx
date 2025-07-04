@@ -26,7 +26,7 @@ export const Jupiter = () => {
 						label={t.oppgaveLabel}
 						description={t.tidsstraff}
 						size="small"
-						className="w-[20rem]"
+						className="w-[10rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>

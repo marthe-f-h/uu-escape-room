@@ -28,8 +28,11 @@ body {
 	background: #031521;
 }
 .gold-button:active {
-	transform: scale(0.97);
-	background: linear-gradient(to bottom, #141e27, #0c1217);
+	background: #031521;
+}
+.gold-button:disabled {
+	cursor: not-allowed;
+	background: #5d6871;
 }
 
 .blue_box {

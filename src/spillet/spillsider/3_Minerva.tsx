@@ -12,9 +12,10 @@ export const Minerva = () => {
 	const { text } = useAppContext()
 	const t = text.Minerva
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode(
+	const { kode, harRiktigKode, fryst, setKode, brukKode } = useKode(
 		['mars'],
-		'Neptun'
+		'Neptun',
+		true
 	)
 
 	return (
@@ -42,11 +43,11 @@ export const Minerva = () => {
 						label={t.oppgaveLabel}
 						description={t.tidsstraff}
 						size="small"
-						className="w-[20rem]"
+						className="w-[10rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>
-					<button className="mt-4 gold-button">
+					<button className="mt-4 gold-button" disabled={fryst}>
 						{text.kode.provKoden}
 					</button>
 				</form>
