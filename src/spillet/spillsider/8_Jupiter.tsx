@@ -1,29 +1,21 @@
-import { BodyLong, Heading, TextField } from '@navikt/ds-react'
+import { BodyLong, TextField } from '@navikt/ds-react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
-import { marsUrl } from '../../constants'
+import { jupiterUrl } from '../../constants'
 import { useKode } from '../useKode'
 
-export const Venus = () => {
+export const Jupiter = () => {
 	const { text } = useAppContext()
-	const t = text.Venus
+	const t = text.Minerva
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode(
-		['lyset', 'fbsat'],
-		'Mars'
-	)
+	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Jupiter')
 
 	return (
-		<OppgaveWrapper
-			title={t.title}
-			overskrift={t.overskrift}
-			hints={[t.hint, t.hint2]}
-		>
+		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
 			<div>
-				<BodyLong className="whitespace-pre-wrap mb-4">
-					{t.oppgave.join('\r\n')}
-				</BodyLong>
+				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
+
 				<form
 					onSubmit={(e) => {
 						e.preventDefault()
@@ -32,6 +24,7 @@ export const Venus = () => {
 				>
 					<TextField
 						label={t.oppgaveLabel}
+						description={t.tidsstraff}
 						size="small"
 						className="w-[20rem]"
 						value={kode}
@@ -41,19 +34,12 @@ export const Venus = () => {
 						{text.kode.provKoden}
 					</button>
 				</form>
-
-				<div className="sr-only">
-					<Heading size="small" level="2">
-						Hint
-					</Heading>
-					<BodyLong className="mt-4">{t.hint}</BodyLong>
-				</div>
 			</div>
 
 			<ResultatBox
 				harRiktigKode={harRiktigKode}
 				gave={t.gave}
-				nesteUrl={marsUrl}
+				nesteUrl={jupiterUrl}
 			/>
 		</OppgaveWrapper>
 	)

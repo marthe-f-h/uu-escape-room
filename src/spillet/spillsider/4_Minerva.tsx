@@ -2,7 +2,7 @@ import { BodyLong, TextField } from '@navikt/ds-react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
-import { minervaUrl } from '../../constants'
+import { neptunUrl } from '../../constants'
 import imgApollo from '../bilder/Apollo.png'
 import imgMars from '../bilder/Mars.png'
 import imgMerkur from '../bilder/Merkur.jpg'
@@ -54,9 +54,8 @@ export const Minerva = () => {
 
 			<ResultatBox
 				harRiktigKode={harRiktigKode}
-				text={text}
 				gave={t.gave}
-				nesteUrl={minervaUrl}
+				nesteUrl={neptunUrl}
 			/>
 		</OppgaveWrapper>
 	)

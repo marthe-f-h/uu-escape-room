@@ -75,6 +75,20 @@ const no = {
 		],
 		mal: 'Finn veien gjennom prøvelsene gudene har lagt foran deg. Vinn tilbake deres gunst, gjennopprett balansen, kom tilbake til de levendes verden - og finn Apollos Lyre.'
 	},
+	Sekken: {
+		overskrift: 'Sekken',
+		tomt: 'Tomt...',
+		Krukke: 'Krukke',
+		Pergament: 'Pergament',
+		Sverd: 'Sverd',
+		Hjelm: 'Hjelm'
+	},
+	kode: {
+		feil: 'Koden er feil!',
+		rett: 'Koden er riktig!',
+		videre: 'Gå videre',
+		provKoden: 'Prøv koden'
+	},
 	Venus: {
 		title: 'uu spill - Venus',
 		overskrift: 'En gåte fra Venus',
@@ -132,20 +146,6 @@ const no = {
 		oppgaveLabel: 'Hvem er den sannferdige?',
 		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
 		gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
-	},
-	Sekken: {
-		overskrift: 'Sekken',
-		tomt: 'Tomt...',
-		Krukke: 'Krukke',
-		Pergament: 'Pergament',
-		Sverd: 'Sverd',
-		Hjelm: 'Hjelm'
-	},
-	kode: {
-		feil: 'Koden er feil!',
-		rett: 'Koden er riktig!',
-		videre: 'Gå videre',
-		provKoden: 'Prøv koden'
 	}
 } as const
 
@@ -219,6 +219,20 @@ const en = {
 		],
 		mal: 'Find your way through the trials the gods have set before you. Regain their favor, restore balance, return to the world of the living - and find the Lyre of Apollo.'
 	},
+	Sekken: {
+		overskrift: 'Backpack',
+		tomt: 'Empty...',
+		Krukke: 'Jar',
+		Pergament: 'Parchment',
+		Sverd: 'Sword',
+		Hjelm: 'Helmet'
+	},
+	kode: {
+		feil: 'The code is incorrect!',
+		rett: 'The code is correct!',
+		videre: 'Go further',
+		provKoden: 'Try the code'
+	},
 	Venus: {
 		title: 'uu spill - Venus',
 		overskrift: 'A riddle from Venus',
@@ -279,20 +293,6 @@ const en = {
 		tidsstraff:
 			'You will get a timeout of 30 seconds for an incorrect answer.',
 		gave: 'Minerva gives you a helmet that you can take with you on your journey. (You will find it in your backpack)'
-	},
-	Sekken: {
-		overskrift: 'Backpack',
-		tomt: 'Empty...',
-		Krukke: 'Jar',
-		Pergament: 'Parchment',
-		Sverd: 'Sword',
-		Hjelm: 'Helmet'
-	},
-	kode: {
-		feil: 'The code is incorrect!',
-		rett: 'The code is correct!',
-		videre: 'Go further',
-		provKoden: 'Try the code'
 	}
 } as const
 

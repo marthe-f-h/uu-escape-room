@@ -67,7 +67,6 @@ export const Mars = () => {
 
 			<ResultatBox
 				harRiktigKode={harRiktigKode}
-				text={text}
 				gave={t.gave}
 				nesteUrl={minervaUrl}
 			/>

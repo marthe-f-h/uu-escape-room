@@ -1,15 +1,16 @@
 import { BodyShort, Link } from '@navikt/ds-react'
-import type { Texts } from "../texts"
 import { Link as RouterLink } from 'react-router-dom'
+import { useAppContext } from '../AppContext'
 
 interface Props {
 	harRiktigKode?: boolean
-	text: Texts
-  gave: string
-  nesteUrl: string
+	gave: string
+	nesteUrl: string
 }
 
-export const ResultatBox = ({ harRiktigKode, text, gave, nesteUrl }: Props) => {
+export const ResultatBox = ({ harRiktigKode, gave, nesteUrl }: Props) => {
+	const { text } = useAppContext()
+
 	return (
 		<div>
 			{harRiktigKode && (
