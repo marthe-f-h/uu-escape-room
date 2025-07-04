@@ -5,7 +5,7 @@ import { ResultatBox } from '../../components/ResultatBox'
 import { plutoUrl } from '../../constants'
 import { useKode } from '../useKode'
 
-export const Neptun = () => {
+export const Merkur = () => {
 	const { text } = useAppContext()
 	const t = text.Minerva
 
