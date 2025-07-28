@@ -161,9 +161,13 @@ const no = {
 	Merkur: {
 		title: 'uu spill - Merkur',
 		overskrift: 'En gåte fra Merkur',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
+		oppgave: [
+			'Skipet legger til ved kanten av et fjell med tre veger å velge. Merkur tar i mot deg og gir deg din neste prøve:',
+			'De fleste handler, jeg forstår. Bare den som ser kan forstå. Vini, vidi, vici. Kun min veg vil føre deg over fjellet.'
+		],
+		oppgaveLabel: 'Hvilken veg velger du?',
+		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
+		hint: 'Jeg kom, jeg så, jeg erobret - Julius Caesar',
 		gave: ''
 	},
 	Pluto: {
@@ -343,9 +347,14 @@ const en = {
 	Merkur: {
 		title: 'uu game - Mercury',
 		overskrift: 'A riddle from Mercury',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
+		oppgave: [
+			'The ship docks at the edge of a mountain with three paths to choose from. Mercury greets you and gives you your next trial:',
+			'Most acts, I understand. Only those who see can understand. Vini, vidi, vici. Only my path will take you over the mountain.'
+		],
+		oppgaveLabel: 'Which path do you choose?',
+		tidsstraff:
+			'You will get a timeout of 30 seconds for an incorrect answer.',
+		hint: 'I came, I saw, I conquered - Julius Caesar',
 		gave: ''
 	},
 	Pluto: {

@@ -1,4 +1,4 @@
-import { BodyLong, TextField } from '@navikt/ds-react'
+import { BodyLong, Radio, RadioGroup } from '@navikt/ds-react'
 import { useAppContext } from '../../AppContext'
 import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
@@ -10,16 +10,22 @@ export const Merkur = () => {
 	const { text } = useAppContext()
 	const t = text.Merkur
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Pluto')
+	const { kode, harRiktigKode, fryst, setKode, brukKode } = useKode(
+		['vidi'],
+		'Pluto',
+		true
+	)
 
 	return (
 		<OppgaveWrapper
 			title={t.title}
 			overskrift={t.overskrift}
 			gud={Guder.Merkur}
+			hints={[t.hint]}
 		>
 			<div>
-				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
+				<BodyLong className="mb-4">{t.oppgave[0]}</BodyLong>
+				<BodyLong className="mb-4 blur">{t.oppgave[1]}</BodyLong>
 
 				<form
 					onSubmit={(e) => {
@@ -27,14 +33,19 @@ export const Merkur = () => {
 						brukKode()
 					}}
 				>
-					<TextField
-						label={t.oppgaveLabel}
-						size="small"
-						className="w-[10rem]"
+					<RadioGroup
+						legend={t.oppgaveLabel}
+						description={t.tidsstraff}
+						className="blur"
+						onChange={setKode}
 						value={kode}
-						onChange={(e) => setKode(e.target.value)}
-					/>
-					<button className="mt-4 gold-button">
+						size="small"
+					>
+						<Radio value="vini">Vini</Radio>
+						<Radio value="vidi">Vidi</Radio>
+						<Radio value="vici">Vici</Radio>
+					</RadioGroup>
+					<button className="mt-4 gold-button" disabled={fryst}>
 						{text.kode.provKoden}
 					</button>
 				</form>
