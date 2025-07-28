@@ -4,6 +4,7 @@ import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { plutoUrl } from '../../constants'
 import { useKode } from '../useKode'
+import { Guder } from '../utils'
 
 export const Merkur = () => {
 	const { text } = useAppContext()
@@ -12,7 +13,11 @@ export const Merkur = () => {
 	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Pluto')
 
 	return (
-		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
+		<OppgaveWrapper
+			title={t.title}
+			overskrift={t.overskrift}
+			gud={Guder.Merkur}
+		>
 			<div>
 				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
 

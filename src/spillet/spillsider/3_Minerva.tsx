@@ -7,19 +7,24 @@ import imgApollo from '../bilder/Apollo.png'
 import imgMars from '../bilder/Mars.png'
 import imgMerkur from '../bilder/Merkur.jpg'
 import { useKode } from '../useKode'
+import { Guder } from '../utils'
 
 export const Minerva = () => {
 	const { text } = useAppContext()
 	const t = text.Minerva
 
 	const { kode, harRiktigKode, fryst, setKode, brukKode } = useKode(
-		['mars'],
+		['apollo'],
 		'Neptun',
 		true
 	)
 
 	return (
-		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
+		<OppgaveWrapper
+			title={t.title}
+			overskrift={t.overskrift}
+			gud={Guder.Minerva}
+		>
 			<div>
 				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
 

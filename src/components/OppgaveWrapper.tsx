@@ -1,20 +1,26 @@
 import { BodyShort, Heading } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
+import { getBeholdning, type Gud } from '../spillet/utils'
+import { useAppContext } from '../AppContext'
 
 interface Props {
 	title: string
 	overskrift: string
 	children: [React.ReactNode, React.ReactNode]
 	hints?: string[]
+	gud: Gud
 }
 
 export const OppgaveWrapper = ({
 	title,
 	overskrift,
 	children,
-	hints
+	hints,
+	gud
 }: Props) => {
 	document.title = title
+
+	const { setSekkBeholdning } = useAppContext()
 	const headingRef = useRef<HTMLHeadingElement>(null)
 	const [hint, settHint] = useState<string>()
 
@@ -22,6 +28,11 @@ export const OppgaveWrapper = ({
 		if (headingRef.current) {
 			headingRef.current.focus()
 		}
+	}, [])
+
+	useEffect(() => {
+		setSekkBeholdning(getBeholdning(gud))
+			// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	useEffect(() => {

@@ -78,9 +78,9 @@ const no = {
 	Sekken: {
 		overskrift: 'Sekken',
 		tomt: 'Tomt...',
-		Krukke: 'Krukke',
+		Krukke: 'Krukke med tre firkanter',
 		Pergament: 'Pergament',
-		Sverd: 'Sverd',
+		Sverd: 'Sverd med inngravering: Veni, Vidi, Vici - Julius Caesar',
 		Hjelm: 'Hjelm'
 	},
 	kode: {
@@ -131,6 +131,7 @@ const no = {
 		],
 		oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
 		hint: 'Skriv slik en keiser ville ha skrevet det.',
+		hint2: 'Skriv svaret med romertall',
 		gave: 'Mars gir deg et sverd som du kan ta med deg på vegen videre. (Du finner det i sekken)'
 	},
 	Minerva: {
@@ -150,11 +151,12 @@ const no = {
 	Neptun: {
 		title: 'uu spill - Neptun',
 		overskrift: 'En gåte fra Neptun',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
-		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
-		gave: ''
+		oppgave:
+			'I mørket møter vi Neptun som tar deg ombord på skipet som kan føre deg over glemselens hav. På roret er det inngravert et rutenett med romerske tall.',
+		oppgaveLabel:
+			'Før Neptun forlater deg forteller han deg at "Kun ved å tre ganger røre ferden, vil skipet seile."',
+		hint: 'Hvil hånden tre ganger der alle veier krysser.',
+		gave: 'Skipet beveger seg sakte over glemselens hav. På skipet finner du en hjelm som du tar med deg i sekken.'
 	},
 	Merkur: {
 		title: 'uu spill - Merkur',
@@ -255,9 +257,9 @@ const en = {
 	Sekken: {
 		overskrift: 'Backpack',
 		tomt: 'Empty...',
-		Krukke: 'Jar',
+		Krukke: 'Jar with three squares',
 		Pergament: 'Parchment',
-		Sverd: 'Sword',
+		Sverd: 'Sword with engraving: Veni, Vidi, Vici - Julius Caesar',
 		Hjelm: 'Helmet'
 	},
 	kode: {
@@ -309,6 +311,7 @@ const en = {
 		],
 		oppgaveLabel: 'How many victories does the Legion of Mars have?',
 		hint: 'Write as an emperor would have written it.',
+		hint2: 'Write the answer in Roman numerals',
 		gave: 'Mars gives you a sword that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Minerva: {
@@ -330,12 +333,12 @@ const en = {
 	Neptun: {
 		title: 'uu game - Neptun',
 		overskrift: 'A riddle from Neptune',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
-		tidsstraff:
-			'You will get a timeout of 30 seconds for an incorrect answer.',
-		gave: ''
+		oppgave:
+			'In the darkness we meet Neptune who takes you aboard the ship that can take you across the sea of oblivion. A grid of Roman numerals is engraved on the rudder.',
+		oppgaveLabel:
+			'Before Neptune leaves you, he tells you that "Only by thrice touching the rudder will the ship sail."',
+		hint: 'Hold your hand three times where all paths cross.',
+		gave: 'The ship slowly moves across the sea of oblivion. You find a helmet on the ship that you take with you in your backpack.'
 	},
 	Merkur: {
 		title: 'uu game - Mercury',

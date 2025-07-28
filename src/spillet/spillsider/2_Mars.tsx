@@ -4,6 +4,7 @@ import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { minervaUrl } from '../../constants'
 import { useKode } from '../useKode'
+import { Guder } from '../utils'
 
 export const Mars = () => {
 	const { text } = useAppContext()
@@ -18,7 +19,8 @@ export const Mars = () => {
 		<OppgaveWrapper
 			title={t.title}
 			overskrift={t.overskrift}
-			hints={[t.hint]}
+			hints={[t.hint, t.hint2]}
+			gud={Guder.Mars}
 		>
 			<div>
 				<BodyLong className="mb-4">{t.oppgave}</BodyLong>

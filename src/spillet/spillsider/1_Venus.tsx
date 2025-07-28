@@ -4,6 +4,7 @@ import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { marsUrl } from '../../constants'
 import { useKode } from '../useKode'
+import { Guder } from '../utils'
 
 export const Venus = () => {
 	const { text } = useAppContext()
@@ -19,6 +20,7 @@ export const Venus = () => {
 			title={t.title}
 			overskrift={t.overskrift}
 			hints={[t.hint, t.hint2]}
+			gud={Guder.Venus}
 		>
 			<div>
 				<BodyLong className="whitespace-pre-wrap mb-4">

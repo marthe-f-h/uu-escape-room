@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from 'react'
 import type { Language, Texts } from './texts'
 import getTexts from './texts'
-import type { SekkBeholdingType } from './spillet/sekken'
+import type { SekkBeholdingType } from './spillet/utils'
 
 export interface AppContextProps {
 	text: Texts

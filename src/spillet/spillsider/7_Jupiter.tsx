@@ -4,6 +4,7 @@ import { OppgaveWrapper } from '../../components/OppgaveWrapper'
 import { ResultatBox } from '../../components/ResultatBox'
 import { jupiterUrl } from '../../constants'
 import { useKode } from '../useKode'
+import { Guder } from '../utils'
 
 export const Jupiter = () => {
 	const { text } = useAppContext()
@@ -12,7 +13,11 @@ export const Jupiter = () => {
 	const { kode, harRiktigKode, setKode, brukKode } = useKode([''], 'Jupiter')
 
 	return (
-		<OppgaveWrapper title={t.title} overskrift={t.overskrift}>
+		<OppgaveWrapper
+			title={t.title}
+			overskrift={t.overskrift}
+			gud={Guder.Jupiter}
+		>
 			<div>
 				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
 

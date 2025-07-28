@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { useAppContext } from '../AppContext'
-import { getBeholdning, type Gud } from './sekken'
+import { getBeholdning, type Gud } from './utils'
 
 export const useKode = (
 	losning: string[],
 	nesteGud: Gud,
-	brukTimeout?: boolean
+	brukTimeout?: boolean,
+	fjernFeilmelding: boolean = true
 ) => {
 	const { setSekkBeholdning } = useAppContext()
 
@@ -30,11 +31,13 @@ export const useKode = (
 			}, 30 * 1000)
 		}
 
-		setTimeout(() => {
-			if (!harRiktigKode) {
-				setHarRiktigKode(undefined)
-			}
-		}, 3 * 1000)
+		if (fjernFeilmelding) {
+			setTimeout(() => {
+				if (!harRiktigKode) {
+					setHarRiktigKode(undefined)
+				}
+			}, 3 * 1000)
+		}
 	}
 
 	return { kode, harRiktigKode, fryst, setKode, brukKode }
