@@ -81,7 +81,9 @@ const no = {
 		Krukke: 'Krukke med tre firkanter',
 		Pergament: 'Pergament der det står: Et tu, Brute? - Julius Cæsar',
 		Sverd: 'Sverd med inngravering: Veni, Vidi, Vici - Julius Cæsar',
-		Hjelm: 'Hjelm med inngravering: To mynter for min sjel'
+		Hjelm: 'Hjelm med inngravering: To mynter for min sjel',
+		Mynter: 'En pose med mynter',
+		Stein: 'En stein med inngravert tekst skrevet i sirkel: "Aeternitas"'
 	},
 	kode: {
 		feil: 'Koden er feil!',
@@ -289,7 +291,9 @@ const en = {
 		Pergament:
 			'Parchment with the inscription: Et tu, Brute? - Julius Caesar',
 		Sverd: 'Sword with engraving: Veni, Vidi, Vici - Julius Caesar',
-		Hjelm: 'Helmet with engraving: Two coins for my soul'
+		Hjelm: 'Helmet with engraving: Two coins for my soul',
+		Mynter: 'A bag of coins',
+		Stein: 'A stone with engraved text written in a circle: "Aeternitas"'
 	},
 	kode: {
 		feil: 'The code is incorrect!',
