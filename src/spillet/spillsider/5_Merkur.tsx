@@ -35,7 +35,7 @@ export const Merkur = () => {
 				>
 					<RadioGroup
 						legend={t.oppgaveLabel}
-						description={t.tidsstraff}
+						description={text.kode.tidsstraff}
 						className="blur"
 						onChange={setKode}
 						value={kode}

@@ -46,7 +46,7 @@ export const Minerva = () => {
 				>
 					<TextField
 						label={t.oppgaveLabel}
-						description={t.tidsstraff}
+						description={text.kode.tidsstraff}
 						size="small"
 						className="w-[10rem]"
 						value={kode}

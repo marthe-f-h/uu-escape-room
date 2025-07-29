@@ -11,6 +11,7 @@ import {
 	minervaUrl,
 	neptunUrl,
 	plutoUrl,
+	sluttenUrl,
 	startUrl,
 	testUrl,
 	venusUrl
@@ -25,6 +26,7 @@ import { Neptun } from './spillet/spillsider/4_Neptun'
 import { Merkur } from './spillet/spillsider/5_Merkur'
 import { Pluto } from './spillet/spillsider/6_Pluto'
 import { Jupiter } from './spillet/spillsider/7_Jupiter'
+import { Slutten } from './spillet/spillsider/8_Slutten'
 
 export const App = () => {
 	const navigate = useNavigate()
@@ -61,6 +63,7 @@ export const App = () => {
 					<Route path={merkurUrl} element={<Merkur />} />
 					<Route path={plutoUrl} element={<Pluto />} />
 					<Route path={jupiterUrl} element={<Jupiter />} />
+					<Route path={sluttenUrl} element={<Slutten />} />
 				</Routes>
 			</main>
 		</div>

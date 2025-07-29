@@ -6,17 +6,25 @@ interface Props {
 	harRiktigKode?: boolean
 	gave: string
 	nesteUrl: string
+	feilmelding?: string
 }
 
-export const ResultatBox = ({ harRiktigKode, gave, nesteUrl }: Props) => {
+export const ResultatBox = ({
+	harRiktigKode,
+	gave,
+	nesteUrl,
+	feilmelding
+}: Props) => {
 	const { text } = useAppContext()
 
 	return (
 		<div>
 			{harRiktigKode && (
-				<div className="mt-4" role="alert" aria-atomic="true">
-					<BodyShort>{text.kode.rett}</BodyShort>
-					<BodyShort className="mt-2">{gave}</BodyShort>
+				<>
+					<div className="mt-4" role="alert" aria-atomic="true">
+						<BodyShort>{text.kode.rett}</BodyShort>
+						<BodyShort className="mt-2">{gave}</BodyShort>
+					</div>
 					<Link
 						as={RouterLink}
 						to={nesteUrl}
@@ -24,11 +32,11 @@ export const ResultatBox = ({ harRiktigKode, gave, nesteUrl }: Props) => {
 					>
 						{text.kode.videre}
 					</Link>
-				</div>
+				</>
 			)}
 			{harRiktigKode === false && (
 				<div className="mt-4" role="alert" aria-atomic="true">
-					{text.kode.feil}
+					{feilmelding || text.kode.feil}
 				</div>
 			)}
 		</div>

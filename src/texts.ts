@@ -79,15 +79,16 @@ const no = {
 		overskrift: 'Sekken',
 		tomt: 'Tomt...',
 		Krukke: 'Krukke med tre firkanter',
-		Pergament: 'Pergament',
-		Sverd: 'Sverd med inngravering: Veni, Vidi, Vici - Julius Caesar',
-		Hjelm: 'Hjelm'
+		Pergament: 'Pergament der det står: Et tu, Brute? - Julius Cæsar',
+		Sverd: 'Sverd med inngravering: Veni, Vidi, Vici - Julius Cæsar',
+		Hjelm: 'Hjelm med inngravering: To mynter for min sjel'
 	},
 	kode: {
 		feil: 'Koden er feil!',
 		rett: 'Koden er riktig!',
 		videre: 'Gå videre',
-		provKoden: 'Prøv koden'
+		provKoden: 'Prøv koden',
+		tidsstraff: 'Du får timeout i 20 sekunder for feil svar.'
 	},
 	Venus: {
 		title: 'uu spill - Venus',
@@ -145,18 +146,21 @@ const no = {
 			'Statue av Apollo. Statuen holder en steintavle der det står: "Merkur er løgneren"'
 		],
 		oppgaveLabel: 'Hvem er den sannferdige?',
-		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
 		gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Neptun: {
 		title: 'uu spill - Neptun',
 		overskrift: 'En gåte fra Neptun',
-		oppgave:
+		oppgave: [
 			'I mørket møter vi Neptun som tar deg ombord på skipet som kan føre deg over glemselens hav. På roret er det inngravert et rutenett med romerske tall.',
+			'Under vises et ror med 9 knapper fordelt på 3 rader og 3 kolonner. Mellom knappene er det synlige kanter, ingen kanter er mot yttersidene.'
+		],
 		oppgaveLabel:
 			'Før Neptun forlater deg forteller han deg at "Kun ved å tre ganger røre ferden, vil skipet seile."',
+
+		kodeVisning: 'Valgt kombinasjon: ',
 		hint: 'Hvil hånden tre ganger der alle veier krysser.',
-		gave: 'Skipet beveger seg sakte over glemselens hav. På skipet finner du en hjelm som du tar med deg i sekken.'
+		gave: 'Skipet beveger seg sakte over glemselens hav. På skipet finner du en liten pose med mynter som du tar med deg i sekken.'
 	},
 	Merkur: {
 		title: 'uu spill - Merkur',
@@ -166,25 +170,45 @@ const no = {
 			'De fleste handler, jeg forstår. Bare den som ser kan forstå. Vini, vidi, vici. Kun min veg vil føre deg over fjellet.'
 		],
 		oppgaveLabel: 'Hvilken veg velger du?',
-		tidsstraff: 'Du får timeout i 30 sekunder for feil svar.',
-		hint: 'Jeg kom, jeg så, jeg erobret - Julius Caesar',
-		gave: ''
+		hint: 'Jeg kom, jeg så, jeg erobret - Julius Cæsar',
+		gave: 'Merkur gir den en stein som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Pluto: {
 		title: 'uu spill - Pluto',
 		overskrift: 'En gåte fra Pluto',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
-		gave: ''
+		oppgave: [
+			'Veien du har valg fører deg til toppen av fjellet. Omringet av mørk tåke sitter Pluto foran et lite tempel og venter på deg. Han sier: "Ingen sjel kommer forbi uten å betale"',
+			'Du finner frem posen med mynter du fant på skipet og heller dem utover bakken.'
+		],
+		oppgaveLabel: 'Hvilke mynter må du gi til Pluto?',
+		lettMynt: 'Lett mynt',
+		tungMynt: 'Tung mynt',
+		knapp: 'Betal Pluto',
+		feilmelding: 'Du har ikke betalt Pluto prisen for din sjel.',
+		hint: 'Ekte riktdom veier tungt, det falske kan kun skinne',
+		gave: 'Pluto gir den en gammel pergamentrull som du kan ta med deg på vegen videre. (Du finner det i sekken)'
 	},
 	Jupiter: {
 		title: 'uu spill - Jupiter',
 		overskrift: 'En gåte fra Jupiter',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
-		gave: ''
+		oppgave: [
+			'Du går inn i tempelet - og med ett er stillhetn total. Luften er tykk og tung, og det er som selve tiden holder pusten. Ved enden av rommet, halvt skjult i mørket, sitter Jupiter på sin trone. I hånden holder han et glødende lyn som får de eldagamle søylene til å kaste lange dype skygger. Midt i rommet står et steinbord med ruter.',
+			'Jupiters stemme bryter stillheten: "Påkall det evige tegn og du får vende tilbake."',
+			'Rutenettet på bordet er delt opp i 9 ruter. Over rutene står det skrevet "Aeternitas"'
+		],
+		oppgaveLabel: 'Velg rutene for å påkalle evigheten.',
+		kodeVisning: 'Valgt kombinasjon: ',
+		feilmelding: 'Du har ikke valgt riktig ruter.',
+		gave: 'Jupiter hever hånden - og i det samme kaster han lynet. Et voldsomt smell. Så: Lys. Altoppslukende, belndende lys, som om solen selv eksploderer foran deg. Du lukker øynene - men det er som om lyset trenger igjennom alt. Kropp. Tanke. Sjel. Tiden selv... '
+	},
+	Slutten: {
+		title: 'uu spill - Slutten',
+		overskrift: 'Gratulerer, du har fullført spillet!',
+		tekst: [
+			'... Og så, like plutselig som det startet: stillhet. Når du åpner øynene igjen, er Jupiter borte. Tempelet er ikke lenger det som var i underverdenen, men der det hele begynte.',
+			'Rommet er stille, sollyset faller svakt inn gjennom høye vinduer. Du er alene. Midt i rommet, på en pidestall av stein, ligger en gjenstand: Apollos lyre. Den gløder svakt - som om små gnister av Jupiters lyn ble værende igjen i strengene. Du løfter den, den er lett, men tung av mening. Med lyren i hånden starter du på ferden tilbake til din keiser - ikke som den samme som reiste, men en som nå har gudenes gunst.',
+			'Rop ut din seiers glede så vi vet du har vunnet!'
+		]
 	}
 } as const
 
@@ -262,15 +286,18 @@ const en = {
 		overskrift: 'Backpack',
 		tomt: 'Empty...',
 		Krukke: 'Jar with three squares',
-		Pergament: 'Parchment',
+		Pergament:
+			'Parchment with the inscription: Et tu, Brute? - Julius Caesar',
 		Sverd: 'Sword with engraving: Veni, Vidi, Vici - Julius Caesar',
-		Hjelm: 'Helmet'
+		Hjelm: 'Helmet with engraving: Two coins for my soul'
 	},
 	kode: {
 		feil: 'The code is incorrect!',
 		rett: 'The code is correct!',
 		videre: 'Go further',
-		provKoden: 'Try the code'
+		provKoden: 'Try the code',
+		tidsstraff:
+			'You will get a timeout of 30 seconds for an incorrect answer.'
 	},
 	Venus: {
 		title: 'uu spill - Venus',
@@ -330,19 +357,20 @@ const en = {
 			'Statue of Apollo. The statue holds a stone tablet that says: "Mercury is the liar"'
 		],
 		oppgaveLabel: 'Who is the truthful one?',
-		tidsstraff:
-			'You will get a timeout of 30 seconds for an incorrect answer.',
 		gave: 'Minerva gives you a helmet that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Neptun: {
 		title: 'uu game - Neptun',
 		overskrift: 'A riddle from Neptune',
-		oppgave:
+		oppgave: [
 			'In the darkness we meet Neptune who takes you aboard the ship that can take you across the sea of oblivion. A grid of Roman numerals is engraved on the rudder.',
+			'Below is a rudder with 9 buttons arranged in 3 rows and 3 columns. Between the buttons, there are visible edges, no edges are against the outer sides.'
+		],
 		oppgaveLabel:
 			'Before Neptune leaves you, he tells you that "Only by thrice touching the rudder will the ship sail."',
+		kodeVisning: 'Selected combination: ',
 		hint: 'Hold your hand three times where all paths cross.',
-		gave: 'The ship slowly moves across the sea of oblivion. You find a helmet on the ship that you take with you in your backpack.'
+		gave: 'The ship slowly moves across the sea of oblivion. You find a small bag of coins on the ship that you take with you in your backpack.'
 	},
 	Merkur: {
 		title: 'uu game - Mercury',
@@ -352,26 +380,45 @@ const en = {
 			'Most acts, I understand. Only those who see can understand. Vini, vidi, vici. Only my path will take you over the mountain.'
 		],
 		oppgaveLabel: 'Which path do you choose?',
-		tidsstraff:
-			'You will get a timeout of 30 seconds for an incorrect answer.',
 		hint: 'I came, I saw, I conquered - Julius Caesar',
-		gave: ''
+		gave: 'Mercury gives you a stone that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Pluto: {
 		title: 'uu game - Pluto',
 		overskrift: 'A riddle from Pluto',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
-		gave: ''
+		oppgave: [
+			'The path you have chosen leads you to the top of the mountain. Surrounded by dark fog, Pluto awaits you in front of a small temple. He says: "No soul passes without paying"',
+			'You take out the bag of coins you found on the ship and pour them onto the ground.'
+		],
+		oppgaveLabel: 'Which coins do you need to give to Pluto?',
+		lettMynt: 'Light coin',
+		tungMynt: 'Heavy coin',
+		knapp: 'Pay Pluto',
+		feilmelding: 'You have not paid Pluto the price for your soul.',
+		hint: 'Genuine wealth weighs heavily, the false can only shine.',
+		gave: 'Pluto gives you an ancient parchment scroll that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Jupiter: {
 		title: 'uu game - Jupiter',
 		overskrift: 'A riddle from Jupiter',
-		oppgave: '',
-		oppgaveLabel: '',
-		hint: '',
-		gave: ''
+		oppgave: [
+			'You enter the temple - and suddenly the silence is total. The air is thick and heavy, and it is as if time itself holds its breath. At the end of the room, half hidden in the darkness, Jupiter sits on his throne. In his hand he holds a glowing lightning bolt that makes the ancient pillars cast long, deep shadows. In the middle of the room stands a stone table with a grid.',
+			'The voice of Jupiter breaks the silence: "Invoke the eternal sign and you will return."',
+			'The grid on the table is divided into 9 squares. Above the squares is written "Aeternitas"'
+		],
+		oppgaveLabel: 'Choose the squares to invoke eternity.',
+		kodeVisning: 'Selected combination: ',
+		feilmelding: 'You have not chosen the correct squares.',
+		gave: 'Jupiter raises his hand - and at the same time he throws the lightning. A violent bang. Then: Light. All-consuming, burning light, as if the sun itself explodes before you. You close your eyes - but it is as if the light burns through everything. Body. Thought. Soul. Time itself...'
+	},
+	Slutten: {
+		title: 'uu game - The End',
+		overskrift: 'Congratulations, you have completed the game!',
+		tekst: [
+			'...And then, just as suddenly as it began: silence. When you open your eyes again, Jupiter is gone. The temple is no longer what it was in the underworld, but where it all began.',
+			"The room is quiet, the sunlight falls weakly through high windows. You are alone. In the middle of the room, on a pedestal of stone, lies an object: The lyre of Apollo. It glows weakly - as if small sparks of Jupiter's lightning remained in the strings. You lift it, it is light, but heavy with meaning. With the lyre in your hand, you start on the journey back to your emperor - not as the same who left, but one who now has the favor of the gods.",
+			'Shout out your joy of victory so we know you have won!'
+		]
 	}
 } as const
 

@@ -8,3 +8,4 @@ export const merkurUrl = `${basePath}/merkur`
 export const plutoUrl = `${basePath}/pluto`
 export const neptunUrl = `${basePath}/neptun`
 export const jupiterUrl = `${basePath}/jupiter`
+export const sluttenUrl = `${basePath}/slutt`

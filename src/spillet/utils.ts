@@ -2,7 +2,9 @@ export const SekkBeholdingTyper = {
 	Krukke: 'Krukke',
 	Sverd: 'Sverd',
 	Pergament: 'Pergament',
-	Hjelm: 'Hjelm'
+	Mynter: 'Mynter',
+	Hjelm: 'Hjelm',
+	Stein: 'Stein'
 } as const
 
 export type SekkBeholdingType =
@@ -32,30 +34,31 @@ export const getBeholdning = (oppgave: Gud): SekkBeholdingType[] => {
 			return [
 				SekkBeholdingTyper.Krukke,
 				SekkBeholdingTyper.Sverd,
-				SekkBeholdingTyper.Pergament
-			]
-		case 'Pluto':
-			return [
-				SekkBeholdingTyper.Krukke,
-				SekkBeholdingTyper.Sverd,
-				SekkBeholdingTyper.Pergament,
 				SekkBeholdingTyper.Hjelm
 			]
 		case 'Merkur':
 			return [
 				SekkBeholdingTyper.Krukke,
 				SekkBeholdingTyper.Sverd,
-				SekkBeholdingTyper.Pergament,
-				SekkBeholdingTyper.Hjelm
-				// TODO
+				SekkBeholdingTyper.Hjelm,
+				SekkBeholdingTyper.Mynter
+			]
+		case 'Pluto':
+			return [
+				SekkBeholdingTyper.Krukke,
+				SekkBeholdingTyper.Sverd,
+				SekkBeholdingTyper.Hjelm,
+				SekkBeholdingTyper.Mynter,
+				SekkBeholdingTyper.Stein
 			]
 		case 'Jupiter':
 			return [
 				SekkBeholdingTyper.Krukke,
 				SekkBeholdingTyper.Sverd,
-				SekkBeholdingTyper.Pergament,
-				SekkBeholdingTyper.Hjelm
-				// TODO
+				SekkBeholdingTyper.Hjelm,
+				SekkBeholdingTyper.Mynter,
+				SekkBeholdingTyper.Stein,
+				SekkBeholdingTyper.Pergament
 			]
 	}
 }

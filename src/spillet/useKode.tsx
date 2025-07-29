@@ -14,9 +14,9 @@ export const useKode = (
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
 	const [fryst, setFryst] = useState<boolean>(false)
 
-	const brukKode = () => {
+	const brukKode = (nyesteKode?: string) => {
 		const harRiktigKode = losning.some(
-			(l) => l === kode.trim().toLowerCase()
+			(l) => l === (nyesteKode || kode).trim().toLowerCase()
 		)
 
 		if (harRiktigKode) {
@@ -28,7 +28,7 @@ export const useKode = (
 			setFryst(true)
 			setTimeout(() => {
 				setFryst(false)
-			}, 30 * 1000)
+			}, 20 * 1000)
 		}
 
 		if (fjernFeilmelding) {
