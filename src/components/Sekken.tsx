@@ -5,6 +5,8 @@ import imgKrukke from '../spillet/bilder/krukke.png'
 import imgSverd from '../spillet/bilder/sverd.png'
 import imgPergament from '../spillet/bilder/pergament.png'
 import imgHjelm from '../spillet/bilder/hjelm.png'
+import imgPose from '../spillet/bilder/pose.png'
+import imgStein from '../spillet/bilder/stein.png'
 
 const getBilde = (sekkeType: SekkBeholdingType) => {
 	switch (sekkeType) {
@@ -16,6 +18,10 @@ const getBilde = (sekkeType: SekkBeholdingType) => {
 			return imgPergament
 		case SekkBeholdingTyper.Hjelm:
 			return imgHjelm
+		case SekkBeholdingTyper.Mynter:
+			return imgPose
+		case SekkBeholdingTyper.Stein:
+			return imgStein
 	}
 }
 
