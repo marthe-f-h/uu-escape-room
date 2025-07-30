@@ -14,6 +14,7 @@ const no = {
 		title: 'uu spill - tester',
 		overskrift: 'Test skjermleser',
 		info: 'Prøv deg frem med skjermleser',
+		switch: 'Skjul skjermen',
 		step1: {
 			navn: 'Skjemakontroller',
 			heading: 'Test skjemakontroller',
@@ -54,6 +55,10 @@ const no = {
 			test1: {
 				overskrift: 'Jeg er usynlig',
 				label: 'Hva står det på den usynlige overskriften?'
+			},
+			test2: {
+				trigger: 'Trigg en alertmelding',
+				alert: 'Her kommer oppdateringene med aria-live'
 			}
 		},
 		step4: {
@@ -264,6 +269,7 @@ const en = {
 		title: 'uu spill - tests',
 		overskrift: 'Test screen reader',
 		info: 'Try it out with a screen reader',
+		switch: 'Hide screen',
 		step1: {
 			navn: 'Form controls',
 			heading: 'Test form controls',
@@ -304,6 +310,10 @@ const en = {
 			test1: {
 				overskrift: 'I am invisible',
 				label: 'What does the invisible heading say?'
+			},
+			test2: {
+				trigger: 'Trigger an alert message',
+				alert: 'Here are the updates with aria-live'
 			}
 		},
 		step4: {

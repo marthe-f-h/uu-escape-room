@@ -6,6 +6,7 @@ import {
 	Radio,
 	RadioGroup,
 	Stepper,
+	Switch,
 	Table,
 	TextField
 } from '@navikt/ds-react'
@@ -14,7 +15,9 @@ import { useAppContext } from '../../AppContext'
 import img from './blueberry.png'
 
 export const TestSide = () => {
+	const [hideScreen, setHideScreen] = useState(false)
 	const [activeStep, setActiveStep] = useState(1)
+	const [showAlert, setShowAlert] = useState(false)
 	const headingRef = useRef<HTMLHeadingElement>(null)
 	const step1Ref = useRef<HTMLHeadingElement>(null)
 	const step2Ref = useRef<HTMLHeadingElement>(null)
@@ -57,6 +60,17 @@ export const TestSide = () => {
 			</Heading>
 
 			<BodyShort>{t.info}</BodyShort>
+
+			<Switch
+				checked={hideScreen}
+				size="small"
+				onChange={() => setHideScreen(!hideScreen)}
+			>
+				{t.switch}
+			</Switch>
+
+			<div className="bg-[#4b3e2a] h-[1px] border border-[#4b3e2a]" />
+
 			<div className="grid grid-cols-[auto_1px_1fr] gap-4">
 				<Stepper
 					aria-label={t.overskrift}
@@ -95,7 +109,7 @@ export const TestSide = () => {
 
 				<div className="bg-[#4b3e2a]" />
 
-				<div className="ml-4">
+				<div className={`ml-4 ${hideScreen ? 'blur-lg' : ''}`}>
 					{activeStep === 1 && (
 						<div className="flex flex-col gap-4">
 							<Heading
@@ -240,6 +254,24 @@ export const TestSide = () => {
 								size="small"
 								className="w-[20rem]"
 							/>
+
+							<button
+								className="mt-4 gold-button"
+								onClick={() => setShowAlert(!showAlert)}
+							>
+								{t.step3.test2.trigger}
+							</button>
+
+							{showAlert && (
+								<BodyShort
+									role="alert"
+									aria-atomic="true"
+									className="gold-alert"
+								>
+									{t.step3.test2.alert}
+								</BodyShort>
+							)}
+
 							<button
 								className="mt-4 gold-button"
 								onClick={() => changeStep(4)}
@@ -251,11 +283,7 @@ export const TestSide = () => {
 
 					{activeStep === 4 && (
 						<div className="flex flex-col gap-4">
-							<Heading
-								level="1"
-								size="medium"
-								className=" sr-only"
-							>
+							<Heading level="1" size="medium">
 								{t.step4.navn}
 							</Heading>
 							<BodyShort
