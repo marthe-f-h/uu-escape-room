@@ -6,7 +6,7 @@ import imgSverd from '../spillet/bilder/sverd.png'
 import imgPergament from '../spillet/bilder/pergament.png'
 import imgHjelm from '../spillet/bilder/hjelm.png'
 import imgPose from '../spillet/bilder/pose.png'
-import imgStein from '../spillet/bilder/stein.png'
+import imgStein from '../spillet/bilder/stein2.png'
 
 const getBilde = (sekkeType: SekkBeholdingType) => {
 	switch (sekkeType) {
@@ -34,6 +34,8 @@ export const Sekken = () => {
 		<div className="">
 			<button
 				className="meny-knapp"
+				aria-expanded={open}
+				data-state={open ? 'open' : 'closed'}
 				onClick={() => {
 					setOpen(!open)
 				}}

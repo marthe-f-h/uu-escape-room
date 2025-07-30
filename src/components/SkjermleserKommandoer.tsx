@@ -11,6 +11,8 @@ export const SkjermleserKommandoer = () => {
 		<div>
 			<button
 				className="meny-knapp"
+				aria-expanded={open}
+				data-state={open ? 'open' : 'closed'}
 				onClick={() => {
 					setOpen(!open)
 				}}

@@ -74,9 +74,18 @@ body {
 
 .navds-radio:hover {
 	color: #fff9ec;
-  & label {
-    color: #fff9ec;
-  }
+}
+
+.navds-radio:hover label {
+	color: #fff9ec;
+}
+
+.test_radio .navds-radio:hover {
+	color: #0056B4;
+}
+
+.test_radio .navds-radio:hover label {
+	color: #0056B4;
 }
 
 .navds-tabs__tab, .navds-list__item-marker--bullet {

@@ -147,7 +147,7 @@ export const SquareToggle = <T extends string>({
 }: Props<T>) => {
 	return (
 		<button
-			role="switch"
+			role="checkbox"
 			aria-checked={checked}
 			aria-label={label}
 			onClick={() => onChange(!checked, value)}

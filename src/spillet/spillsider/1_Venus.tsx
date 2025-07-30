@@ -19,7 +19,7 @@ export const Venus = () => {
 		<OppgaveWrapper
 			title={t.title}
 			overskrift={t.overskrift}
-			hints={[t.hint, t.hint2]}
+			hints={[t.hint2, t.hint3]}
 			gud={Guder.Venus}
 		>
 			<div>

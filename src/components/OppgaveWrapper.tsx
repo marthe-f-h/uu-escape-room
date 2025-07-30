@@ -43,12 +43,12 @@ export const OppgaveWrapper = ({
 			if (hints.length > 0) {
 				settHint(hints[0])
 			}
-		}, 4 * 60 * 1000)
+		}, 3 * 60 * 1000)
 
 		if (hints.length > 1) {
 			setTimeout(() => {
 				settHint(hints[1])
-			}, 8 * 60 * 1000)
+			}, 5 * 60 * 1000)
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])

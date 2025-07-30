@@ -11,20 +11,57 @@ const no = {
 		startLink: 'Start spillet'
 	},
 	TestSide: {
+		title: 'uu spill - tester',
 		overskrift: 'Test skjermleser',
 		info: 'Prøv deg frem med skjermleser',
-		checkbox: 'Avkryssingsboks',
-		bildeAlt: '3 blåbær',
-		tekstfeltLabel: 'Hva er det på bildet?',
+		step1: {
+			navn: 'Skjemakontroller',
+			heading: 'Test skjemakontroller',
+			test1: {
+				bildeAlt: '3 blåbær',
+				label: 'Hvor mange blåbær er det på bildet?',
+				alt1: '1',
+				alt2: '2',
+				alt3: '3'
+			},
+			test2: {
+				label: 'Hvilke farger er det i regnbuen?',
+				alt1: 'Rød',
+				alt2: 'Grønn',
+				alt3: 'Sort'
+			}
+		},
+		step2: {
+			navn: 'Tabeller',
+			heading: 'Test tabeller og tekstfelt',
+			test1: {
+				tabell: 'Frukt',
+				tabellFrukt: 'Frukt',
+				tabellPris: 'Pris per kg',
+				beholdning: 'Beholdning',
+				banan: 'Banan',
+				eple: 'Eple',
+				kiwi: 'Kiwi',
+				alt1: '1',
+				alt2: '2',
+				alt3: '3',
+				label: 'Hva koster 2kg bananer?'
+			}
+		},
+		step3: {
+			navn: 'Kun for skjermleser',
+			heading: 'Test innhold kun for skjermleser',
+			test1: {
+				overskrift: 'Jeg er usynlig',
+				label: 'Hva står det på den usynlige overskriften?'
+			}
+		},
+		step4: {
+			navn: 'Ferdig',
+			tekst: 'Gratulerer, du har fullført testen!'
+		},
 		alert: 'Du har svart',
-		knapp: 'Svar',
-		tabell: 'Frukt',
-		tabellFrukt: 'Frukt',
-		tabellPris: 'Pris per kg',
-		beholdning: 'Beholdning',
-		banan: 'Banan',
-		eple: 'Eple',
-		kiwi: 'Kiwi'
+		knapp: 'Svar'
 	},
 	SkjermleserKommandoer: {
 		overskrift: 'Skjermleserkommandoer',
@@ -105,7 +142,8 @@ const no = {
 		oppgaveLabel: 'Hva er koden?',
 		hint: 'Starten er viktigere enn det som kommer etter.',
 		hint2: 'Koden er på fem tegn.',
-		gave: 'Venus gir eg en keramikkrukke som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+		hint3: 'Bruk første bokstav fra hver linje i verset.',
+		gave: 'Venus gir deg en keramikkrukke som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Mars: {
 		title: 'uu spill - Mars',
@@ -209,7 +247,7 @@ const no = {
 		tekst: [
 			'... Og så, like plutselig som det startet: stillhet. Når du åpner øynene igjen, er Jupiter borte. Tempelet er ikke lenger det som var i underverdenen, men der det hele begynte.',
 			'Rommet er stille, sollyset faller svakt inn gjennom høye vinduer. Du er alene. Midt i rommet, på en pidestall av stein, ligger en gjenstand: Apollos lyre. Den gløder svakt - som om små gnister av Jupiters lyn ble værende igjen i strengene. Du løfter den, den er lett, men tung av mening. Med lyren i hånden starter du på ferden tilbake til din keiser - ikke som den samme som reiste, men en som nå har gudenes gunst.',
-			'Rop ut din seiers glede så vi vet du har vunnet!'
+			'Rop ut din seiersglede så vi vet du har vunnet!'
 		]
 	}
 } as const
@@ -223,20 +261,57 @@ const en = {
 		startLink: 'Start the game'
 	},
 	TestSide: {
+		title: 'uu spill - tests',
 		overskrift: 'Test screen reader',
 		info: 'Try it out with a screen reader',
-		checkbox: 'Checkbox',
-		bildeAlt: '3 blueberries',
-		tekstfeltLabel: 'What is in the picture?',
+		step1: {
+			navn: 'Form controls',
+			heading: 'Test form controls',
+			test1: {
+				bildeAlt: '3 blueberries',
+				label: 'How many blueberries are in the picture?',
+				alt1: '1',
+				alt2: '2',
+				alt3: '3'
+			},
+			test2: {
+				label: 'What colors are in the rainbow?',
+				alt1: 'Red',
+				alt2: 'Green',
+				alt3: 'Black'
+			}
+		},
+		step2: {
+			navn: 'Tables',
+			heading: 'Test tables and text fields',
+			test1: {
+				tabell: 'Fruit',
+				tabellFrukt: 'Fruit',
+				tabellPris: 'Price per kg',
+				beholdning: 'Stock',
+				banan: 'Banana',
+				eple: 'Apple',
+				kiwi: 'Kiwi',
+				alt1: '1',
+				alt2: '2',
+				alt3: '3',
+				label: 'What is the price of 2kg of bananas?'
+			}
+		},
+		step3: {
+			navn: 'Screen reader only',
+			heading: 'Test content only for screen reader',
+			test1: {
+				overskrift: 'I am invisible',
+				label: 'What does the invisible heading say?'
+			}
+		},
+		step4: {
+			navn: 'Finished',
+			tekst: 'Congratulations, you have completed the test!'
+		},
 		alert: 'You have answered',
-		knapp: 'Answer',
-		tabell: 'Fruit',
-		tabellFrukt: 'Fruit',
-		tabellPris: 'Price per kg',
-		beholdning: 'Stock',
-		banan: 'Banana',
-		eple: 'Apple',
-		kiwi: 'Kiwi'
+		knapp: 'Answer'
 	},
 	SkjermleserKommandoer: {
 		overskrift: 'Screen reader commands',
@@ -316,6 +391,7 @@ const en = {
 		oppgaveLabel: 'What is the code?',
 		hint: 'The beginning is more important than what comes after.',
 		hint2: 'The code is five characters long.',
+		hint3: 'Use the first letter from each line in the verse.',
 		gave: 'Venus gives you a ceramic jar that you can take with you on your journey. (You will find it in your backpack)'
 	},
 	Mars: {
