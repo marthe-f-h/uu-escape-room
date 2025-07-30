@@ -48,7 +48,7 @@ export const Minerva = () => {
 						label={t.oppgaveLabel}
 						description={text.kode.tidsstraff}
 						size="small"
-						className="w-[10rem]"
+						className="w-[18rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>

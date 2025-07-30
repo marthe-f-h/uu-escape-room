@@ -57,7 +57,7 @@ export const Mars = () => {
 					<TextField
 						label={t.oppgaveLabel}
 						size="small"
-						className="w-[10rem]"
+						className="w-[18rem]"
 						value={kode}
 						onChange={(e) => setKode(e.target.value)}
 					/>
