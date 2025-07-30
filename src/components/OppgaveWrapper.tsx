@@ -22,7 +22,7 @@ export const OppgaveWrapper = ({
 
 	const { setSekkBeholdning } = useAppContext()
 	const headingRef = useRef<HTMLHeadingElement>(null)
-	const [hint, settHint] = useState<string>()
+	const [hint, settHint] = useState<string[]>([])
 
 	useEffect(() => {
 		if (headingRef.current) {
@@ -32,7 +32,7 @@ export const OppgaveWrapper = ({
 
 	useEffect(() => {
 		setSekkBeholdning(getBeholdning(gud))
-			// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	useEffect(() => {
@@ -41,13 +41,13 @@ export const OppgaveWrapper = ({
 		}
 		setTimeout(() => {
 			if (hints.length > 0) {
-				settHint(hints[0])
+				settHint([hints[0]])
 			}
 		}, 3 * 60 * 1000)
 
 		if (hints.length > 1) {
 			setTimeout(() => {
-				settHint(hints[1])
+				settHint(hints)
 			}, 5 * 60 * 1000)
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -72,7 +72,7 @@ export const OppgaveWrapper = ({
 
 			<div className="flex flex-col justify-between">
 				{children[1]}
-				{hint && (
+				{hint.length > 0 && (
 					<div role="alert" aria-atomic="true">
 						<Heading
 							level="2"
@@ -81,7 +81,11 @@ export const OppgaveWrapper = ({
 						>
 							Hint
 						</Heading>
-						<BodyShort className="blur">{hint}</BodyShort>
+						{hint.map((h, index) => (
+							<BodyShort key={`hint-${index}`} className="mb-2">
+								<BodyShort className="blur">{h}</BodyShort>
+							</BodyShort>
+						))}
 					</div>
 				)}
 			</div>
