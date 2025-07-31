@@ -31,32 +31,31 @@ export const Sekken = () => {
 	const [open, setOpen] = useState(false)
 
 	return (
-		<div className="">
-			<button
-				className="meny-knapp"
-				aria-expanded={open}
-				data-state={open ? 'open' : 'closed'}
-				onClick={() => {
-					setOpen(!open)
-				}}
-			>
-				{t.overskrift}
-			</button>
-			{open && (
-				<div className="flex flex-wrap items-center gap-4 p-4 border-l border-b border-r border-[#d8a33c] rounded-b-md">
-					{sekkBeholdning.length > 0
-						? sekkBeholdning.map((item, index) => (
-								<div key={index} className="sekk-item">
-									<img
-										src={getBilde(item)}
-										alt={t[item]}
-										className="h-16"
-									/>
-								</div>
-						  ))
-						: t.tomt}
-				</div>
-			)}
-		</div>
-	)
+    <div className="">
+      <button
+        className="meny-knapp"
+        aria-controls="sekk-panel"
+        aria-expanded={open}
+        data-state={open ? 'open' : 'closed'}
+        onClick={() => {
+          setOpen(!open)
+        }}
+      >
+        {t.overskrift}
+      </button>
+      <div id="sekk-panel" aria-label={t.overskrift} role="region">
+        {open && (
+          <div className="flex flex-wrap items-center gap-4 p-4 border-l border-b border-r border-[#d8a33c] rounded-b-md">
+            {sekkBeholdning.length > 0
+              ? sekkBeholdning.map((item, index) => (
+                  <div key={`sekk-item-${index}`} className="sekk-item">
+                    <img src={getBilde(item)} alt={t[item]} className="h-16" />
+                  </div>
+                ))
+              : t.tomt}
+          </div>
+        )}
+      </div>
+    </div>
+  )
 }

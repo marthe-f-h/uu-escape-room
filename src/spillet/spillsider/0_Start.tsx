@@ -17,27 +17,27 @@ export const Start = () => {
 	}, [])
 
 	return (
-		<div className="h-screen overflow-auto p-4 pl-6 golden-panel">
-			<div>
-				<Heading
-					level="1"
-					size="small"
-					className="text-3xl mb-4 outline-none"
-					tabIndex={-1}
-					ref={headingRef}
-				>
-					{t.overskrift}
-				</Heading>
-				{t.intro.map((text, index) => (
-					<p key={index} className="mb-4">
-						{text}
-					</p>
-				))}
-				<p className="mt-2">{t.mal}</p>
-			</div>
-			<Link as={RouterLink} to={venusUrl} className="gold-button mt-8">
-				Er du klar? Begynn prøven
-			</Link>
-		</div>
-	)
+    <div className="h-screen overflow-auto p-4 pl-6 golden-panel">
+      <div>
+        <Heading
+          level="1"
+          size="small"
+          className="text-3xl mb-4 outline-none"
+          tabIndex={-1}
+          ref={headingRef}
+        >
+          {t.overskrift}
+        </Heading>
+        {t.intro.map((text, index) => (
+          <p key={`text-${index}`} className="mb-4">
+            {text}
+          </p>
+        ))}
+        <p className="mt-2">{t.mal}</p>
+      </div>
+      <Link as={RouterLink} to={venusUrl} className="gold-button mt-8">
+        Er du klar? Begynn prøven
+      </Link>
+    </div>
+  )
 }

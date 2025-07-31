@@ -16,62 +16,58 @@ export const Mars = () => {
 	)
 
 	return (
-		<OppgaveWrapper
-			title={t.title}
-			overskrift={t.overskrift}
-			hints={[t.hint, t.hint2]}
-			gud={Guder.Mars}
-		>
-			<div>
-				<BodyLong className="mb-4">{t.oppgave}</BodyLong>
+    <OppgaveWrapper
+      title={t.title}
+      overskrift={t.overskrift}
+      hints={[t.hint, t.hint2]}
+      gud={Guder.Mars}
+    >
+      <div>
+        <BodyLong className="mb-4">{t.oppgave}</BodyLong>
 
-				<Table size="small" className="mb-4 blur">
-					<Table.Header>
-						<Table.Row>
-							{t.tabellHeadere.map((header, index) => (
-								<Table.HeaderCell scope="col" key={index}>
-									{header}
-								</Table.HeaderCell>
-							))}
-						</Table.Row>
-					</Table.Header>
-					<Table.Body>
-						{t.tabellData.map((row, index) => (
-							<Table.Row key={index}>
-								<Table.HeaderCell scope="row">
-									{row.slag}
-								</Table.HeaderCell>
-								<Table.DataCell>{row.legion}</Table.DataCell>
-								<Table.DataCell>{row.utfall}</Table.DataCell>
-							</Table.Row>
-						))}
-					</Table.Body>
-				</Table>
+        <Table size="small" className="mb-4 blur">
+          <Table.Header>
+            <Table.Row>
+              {t.tabellHeadere.map((header, index) => (
+                <Table.HeaderCell scope="col" key={`header-mars-${index}`}>
+                  {header}
+                </Table.HeaderCell>
+              ))}
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            {t.tabellData.map((row, index) => (
+              <Table.Row key={`row-mars-${index}`}>
+                <Table.HeaderCell scope="row">{row.slag}</Table.HeaderCell>
+                <Table.DataCell>{row.legion}</Table.DataCell>
+                <Table.DataCell>{row.utfall}</Table.DataCell>
+              </Table.Row>
+            ))}
+          </Table.Body>
+        </Table>
 
-				<form
-					onSubmit={(e) => {
-						e.preventDefault()
-						brukKode()
-					}}
-				>
-					<TextField
-						label={t.oppgaveLabel}
-						size="small"
-						className="w-[18rem]"
-						value={kode}
-						onChange={(e) => setKode(e.target.value)}
-					/>
-					<button className="mt-4 gold-button">
-						{text.kode.provKoden}
-					</button>
-				</form>
-			</div>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault()
+            brukKode()
+          }}
+        >
+          <TextField
+            label={t.oppgaveLabel}
+            size="small"
+            className="w-[18rem]"
+            value={kode}
+            onChange={(e) => setKode(e.target.value)}
+          />
+          <button className="mt-4 gold-button">{text.kode.provKoden}</button>
+        </form>
+      </div>
 
-			<ResultatBox
-				harRiktigKode={harRiktigKode}
-				gave={t.gave}
-				nesteUrl={minervaUrl}
-			/>
-		</OppgaveWrapper>
-	)
+      <ResultatBox
+        harRiktigKode={harRiktigKode}
+        gave={t.gave}
+        nesteUrl={minervaUrl}
+      />
+    </OppgaveWrapper>
+  )
 }
