@@ -24,6 +24,11 @@ body {
 	cursor: pointer;
 	text-decoration: none !important;
 }
+
+.gold-button:focus {
+	outline: 3px solid #a06d0e;
+	background: #031521;
+}
 .gold-button:hover {
 	background: #031521;
 }
@@ -54,11 +59,22 @@ body {
   padding: 0.5rem 1rem;
   font-family: 'Cinzel', serif;
   color: #05253a;
-  background: #ffe1aa;
+  background: #f3dfb9;
   border: 2px solid var(--border-color);
   border-radius: 8px;
   width: 100%;
   cursor: pointer;
+}
+
+.meny-knapp:focus {
+	outline: 3px solid #a06d0e;
+	background: #ffe1aa;
+}
+.meny-knapp:hover {
+	background: #ffe1aa;
+}
+.meny-knapp:active {
+	background: #ffe1aa;
 }
 
 .golden-panel {

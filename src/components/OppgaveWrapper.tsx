@@ -54,41 +54,37 @@ export const OppgaveWrapper = ({
 	}, [])
 
 	return (
-		<div className="h-screen overflow-auto p-4 pl-6 golden-panel grid grid-cols-[60%_1px_1fr] gap-4">
-			<div>
-				<Heading
-					level="1"
-					size="small"
-					className="text-3xl mb-4 outline-none"
-					tabIndex={-1}
-					ref={headingRef}
-				>
-					{overskrift}
-				</Heading>
-				{children[0]}
-			</div>
+    <div className="h-screen overflow-auto p-4 pl-6 golden-panel grid grid-cols-[60%_1px_1fr] gap-4">
+      <div>
+        <Heading
+          level="1"
+          size="small"
+          className="text-3xl mb-4 outline-none"
+          tabIndex={-1}
+          ref={headingRef}
+        >
+          {overskrift}
+        </Heading>
+        {children[0]}
+      </div>
 
-			<div className="bg-[#4b3e2a]" />
+      <div className="bg-[#4b3e2a]" />
 
-			<div className="flex flex-col justify-between">
-				{children[1]}
-				{hint.length > 0 && (
-					<div role="alert" aria-atomic="true">
-						<Heading
-							level="2"
-							size="xsmall"
-							className="text-2xl mb-2"
-						>
-							Hint
-						</Heading>
-						{hint.map((h, index) => (
-							<BodyShort key={`hint-${index}`} className="mb-2">
-								<BodyShort className="blur">{h}</BodyShort>
-							</BodyShort>
-						))}
-					</div>
-				)}
-			</div>
-		</div>
-	)
+      <div className="flex flex-col justify-between">
+        {children[1]}
+        {hint.length > 0 && (
+          <div role="alert" aria-atomic="true">
+            <Heading level="2" size="xsmall" className="text-2xl mb-2">
+              Hint
+            </Heading>
+            {hint.map((h, index) => (
+              <BodyShort key={`hint-${index}`} className="mb-2">
+                <BodyShort className="blur">{h}</BodyShort>
+              </BodyShort>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
 }

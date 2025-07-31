@@ -24,7 +24,6 @@ export const SkjermleserKommandoer = () => {
       <div id="skjermleser-panel" aria-label={t.overskrift} role="region">
         {open && (
           <div className="flex gap-4 p-4 border-l border-b border-r border-[#d8a33c] rounded-b-md">
-            <h3 className="sr-only">{t.overskrift}</h3>
             <Tabs defaultValue="voiceover" size="small" className="pt-2">
               <Tabs.List>
                 <Tabs.Tab

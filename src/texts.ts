@@ -12,6 +12,7 @@ const no = {
   },
   TestSide: {
     title: 'uu spill - tester',
+    navigasjon: 'Navigasjon for tester',
     overskrift: 'Test skjermleser',
     info: 'Prøv deg frem med skjermleser',
     switch: 'Skjul skjermen',
@@ -269,6 +270,7 @@ const en = {
   },
   TestSide: {
     title: 'uu spill - tests',
+    navigasjon: 'Navigation for tests',
     overskrift: 'Test screen reader',
     info: 'Try it out with a screen reader',
     switch: 'Hide screen',
