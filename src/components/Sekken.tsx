@@ -6,7 +6,7 @@ import imgSverd from '../spillet/bilder/sverd.png'
 import imgPergament from '../spillet/bilder/pergament.png'
 import imgHjelm from '../spillet/bilder/hjelm.png'
 import imgPose from '../spillet/bilder/pose.png'
-import imgStein from '../spillet/bilder/stein2.png'
+import imgStein from '../spillet/bilder/stein.png'
 
 const getBilde = (sekkeType: SekkBeholdingType) => {
 	switch (sekkeType) {

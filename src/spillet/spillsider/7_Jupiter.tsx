@@ -11,7 +11,7 @@ export const Jupiter = () => {
 	const t = text.Jupiter
 
 	const { kode, harRiktigKode, fryst, setKode, brukKode } = useKode(
-		['2,4,6,8', '1,2,3,4,6,7,8,9'],
+		['1,2,3,4,6,7,8,9'],
 		'Jupiter',
 		true
 	)
@@ -47,7 +47,7 @@ export const Jupiter = () => {
 				<BodyLong className="mb-4 sr-only">{t.oppgave[2]}</BodyLong>
 
 				<div className="rounded-full w-[19rem] max-w-md aspect-square bg-[#2a2c34] mb-4 flex items-center justify-center">
-					<div className="grid grid-cols-3 gap-px bg-[#ffe1aa] text-[#ffe1aa] w-fit border border-[#ffe1aa]">
+					<div className="grid grid-cols-3 w-fit border-2 border-[#ffe1aa] rounded-full overflow-hidden">
 						<SquareToggle
 							value="1"
 							label="1"
@@ -151,7 +151,7 @@ export const SquareToggle = <T extends string>({
 			aria-checked={checked}
 			aria-label={label}
 			onClick={() => onChange(!checked, value)}
-			className={`cursor-pointer w-[4rem] aspect-square transition-colors duration-200 ${
+			className={`cursor-pointer m-[-2px] border border-[#ffe1aa] w-[5rem] aspect-square transition-colors duration-200 ${
 				checked ? 'bg-[#ffe1aa]' : 'bg-[#2a2c34]'
 			}`}
 		/>

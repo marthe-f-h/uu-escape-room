@@ -86,7 +86,7 @@ const no = {
 				{ label: 'Lukke rotor', value: 'Esc' },
 				{
 					label: 'Navigere i rotor',
-					value: 'Piltaster navigere og Enter for å velge'
+					value: 'Piltaster for å navigere og Enter for å velge'
 				}
 			]
 		},
@@ -111,7 +111,7 @@ const no = {
 		overskrift: 'Velkommen til Escape Room - Gudenes gunst!',
 		intro: [
 			'Du var soldat i keiserens tjeneste. En lojal kriger, bundet av ed og ære. Da riket vaklet under varsler om krig og sult, ble du utvalgt til et oppdrag kun de modigste kunne bære: å hente en eldgammel gjenstand - Lyren til Apollo - skjult dypt i et glemt tempel viet de eldgamle gudene.',
-			'Lyren sies å kunne stilne krig og forvrenge skjeben selv, men én lov står fast: Ingen dødelig skal trå inn i tempelet uten guddommelig kall.',
+			'Lyren sies å kunne stilne krig og forvrenge skjebnen selv, men én lov står fast: Ingen dødelig skal trå inn i tempelet uten guddommelig kall.',
 			'Du trosset varselet, du gikk inn. Slik falt dommen. Mørket tok deg, og du ble sendt til underverdenen - et sted der sjeler vandrer i evig skygge.',
 			'Men alt håp er ikke tapt. Gudene er lunefulle, men ikke døve for mot. Du har én sjanse: Bevis din verdighet ved å fullføre prøvelsene de har lagt foran deg. Kunnskap, styrke og klokskap vil føre deg gjennom mørket.'
 		],
@@ -216,13 +216,13 @@ const no = {
 		],
 		oppgaveLabel: 'Hvilken veg velger du?',
 		hint: 'Jeg kom, jeg så, jeg erobret - Julius Cæsar',
-		gave: 'Merkur gir den en stein som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+		gave: 'Merkur gir deg en stein som du kan ta med deg på vegen videre. (Du finner den i sekken)'
 	},
 	Pluto: {
 		title: 'uu spill - Pluto',
 		overskrift: 'En gåte fra Pluto',
 		oppgave: [
-			'Veien du har valg fører deg til toppen av fjellet. Omringet av mørk tåke sitter Pluto foran et lite tempel og venter på deg. Han sier: "Ingen sjel kommer forbi uten å betale"',
+			'Veien du har valgt fører deg til toppen av fjellet. Omringet av mørk tåke sitter Pluto foran et lite tempel og venter på deg. Han sier: "Ingen sjel kommer forbi uten å betale"',
 			'Du finner frem posen med mynter du fant på skipet og heller dem utover bakken.'
 		],
 		oppgaveLabel: 'Hvilke mynter må du gi til Pluto?',
@@ -231,20 +231,20 @@ const no = {
 		knapp: 'Betal Pluto',
 		feilmelding: 'Du har ikke betalt Pluto prisen for din sjel.',
 		hint: 'Ekte riktdom veier tungt, det falske kan kun skinne',
-		gave: 'Pluto gir den en gammel pergamentrull som du kan ta med deg på vegen videre. (Du finner det i sekken)'
+		gave: 'Pluto gir deg en gammel pergamentrull som du kan ta med deg på vegen videre. (Du finner det i sekken)'
 	},
 	Jupiter: {
 		title: 'uu spill - Jupiter',
 		overskrift: 'En gåte fra Jupiter',
 		oppgave: [
-			'Du går inn i tempelet - og med ett er stillhetn total. Luften er tykk og tung, og det er som selve tiden holder pusten. Ved enden av rommet, halvt skjult i mørket, sitter Jupiter på sin trone. I hånden holder han et glødende lyn som får de eldagamle søylene til å kaste lange dype skygger. Midt i rommet står et steinbord med ruter.',
+			'Du går inn i tempelet - og med ett er stillheten total. Luften er tykk og tung, og det er som selve tiden holder pusten. Ved enden av rommet, halvt skjult i mørket, sitter Jupiter på sin trone. I hånden holder han et glødende lyn som får de eldagamle søylene til å kaste lange dype skygger. Midt i rommet står et steinbord med ruter.',
 			'Jupiters stemme bryter stillheten: "Påkall det evige tegn og du får vende tilbake."',
 			'Rutenettet på bordet er delt opp i 9 ruter. Over rutene står det skrevet "Aeternitas"'
 		],
 		oppgaveLabel: 'Velg rutene for å påkalle evigheten.',
 		kodeVisning: 'Valgt kombinasjon: ',
 		feilmelding: 'Du har ikke valgt riktig ruter.',
-		gave: 'Jupiter hever hånden - og i det samme kaster han lynet. Et voldsomt smell. Så: Lys. Altoppslukende, belndende lys, som om solen selv eksploderer foran deg. Du lukker øynene - men det er som om lyset trenger igjennom alt. Kropp. Tanke. Sjel. Tiden selv... '
+		gave: 'Jupiter hever hånden - og i det samme kaster han lynet. Et voldsomt smell. Så: Lys. Altoppslukende, blendende lys, som om solen selv eksploderer foran deg. Du lukker øynene - men det er som om lyset trenger igjennom alt. Kropp. Tanke. Sjel. Tiden selv... '
 	},
 	Slutten: {
 		title: 'uu spill - Slutten',
