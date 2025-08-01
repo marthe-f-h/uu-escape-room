@@ -187,7 +187,7 @@ const no = {
     title: 'uu spill - Minerva',
     overskrift: 'En gåte fra Minerva',
     oppgave:
-      'Minerva møter deg og viser deg veien til et rom med tre statuer. Statuene er av gudene Apollo, Merkur og Mars. Hver statue holder en tavle, der en er sannferdig, en lyver, og en kan vi ikke vite om sier sannhet eller løgn.',
+      'Minerva møter deg og viser deg veien til et rom med tre statuer. Statuene er av gudene Mars, Merkur og Apollo. Hver statue holder en tavle, der en er sannferdig, en lyver, og en kan vi ikke vite om sier sannhet eller løgn.',
     bilder: [
       'Statue av Mars. Statuen holder en steintavle der det står: "Merkur er den sannferdige"',
       'Statue av Merkur. Statuen holder en steintavle der det står: "Jeg er ikke sannferdig"',
@@ -214,7 +214,7 @@ const no = {
     title: 'uu spill - Merkur',
     overskrift: 'En gåte fra Merkur',
     oppgave: [
-      'Skipet legger til ved kanten av et fjell med tre veger å velge. Merkur tar i mot deg og gir deg din neste prøve:',
+      'Skipet legger til ved kanten av et fjell med tre veier å velge. Merkur tar i mot deg og gir deg din neste prøve:',
       'De fleste handler, jeg forstår. Bare den som ser kan forstå. Vini, vidi, vici. Kun min veg vil føre deg over fjellet.'
     ],
     oppgaveLabel: 'Hvilken veg velger du?',
@@ -228,7 +228,7 @@ const no = {
       'Veien du har valgt fører deg til toppen av fjellet. Omringet av mørk tåke sitter Pluto foran et lite tempel og venter på deg. Han sier: "Ingen sjel kommer forbi uten å betale"',
       'Du finner frem posen med mynter du fant på skipet og heller dem utover bakken.'
     ],
-    oppgaveLabel: 'Hvilke mynter må du gi til Pluto?',
+    oppgaveLabel: 'Hvor mye må du betale Pluto?',
     lettMynt: 'Lett mynt',
     tungMynt: 'Tung mynt',
     knapp: 'Betal Pluto',
@@ -240,7 +240,7 @@ const no = {
     title: 'uu spill - Jupiter',
     overskrift: 'En gåte fra Jupiter',
     oppgave: [
-      'Du går inn i tempelet - og med ett er stillheten total. Luften er tykk og tung, og det er som selve tiden holder pusten. Ved enden av rommet, halvt skjult i mørket, sitter Jupiter på sin trone. I hånden holder han et glødende lyn som får de eldagamle søylene til å kaste lange dype skygger. Midt i rommet står et steinbord med ruter.',
+      'Du går inn i tempelet - og med ett er stillheten total. Luften er tykk og tung, og det er som selve tiden holder pusten. Ved enden av rommet, halvt skjult i mørket, sitter Jupiter på sin trone. I hånden holder han et glødende lyn som får de eldgamle søylene til å kaste lange dype skygger. Midt i rommet står et steinbord med ruter.',
       'Jupiters stemme bryter stillheten: "Påkall det evige tegn og du får vende tilbake."',
       'Rutenettet på bordet er delt opp i 9 ruter. Over rutene står det skrevet "Aeternitas"'
     ],
@@ -443,7 +443,7 @@ const en = {
     title: 'uu spill - Minerva',
     overskrift: 'A riddle from Minerva',
     oppgave:
-      'Minerva meets you and shows you the way to a room with three statues. The statues are of the gods Apollo, Mercury, and Mars. Each statue holds a tablet, one is truthful, one lies, and one we cannot know if it speaks truth or lies.',
+      'Minerva meets you and shows you the way to a room with three statues. The statues are of the gods Mars, Mercury, and Apollo. Each statue holds a tablet, one is truthful, one lies, and one we cannot know if it speaks truth or lies.',
     gaate:
       'The first statue is Apollo, the tablet says Mercury is the truthful one. By Mercury\'s tablet it says: "I am not truthful". By Mars\' tablet it says that Mercury is the liar.',
     bilder: [
@@ -485,7 +485,7 @@ const en = {
       'The path you have chosen leads you to the top of the mountain. Surrounded by dark fog, Pluto awaits you in front of a small temple. He says: "No soul passes without paying"',
       'You take out the bag of coins you found on the ship and pour them onto the ground.'
     ],
-    oppgaveLabel: 'Which coins do you need to give to Pluto?',
+    oppgaveLabel: 'How much do you have to pay Pluto?',
     lettMynt: 'Light coin',
     tungMynt: 'Heavy coin',
     knapp: 'Pay Pluto',
