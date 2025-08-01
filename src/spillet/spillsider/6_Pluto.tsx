@@ -86,6 +86,7 @@ export const Pluto = () => {
         gave={t.gave}
         nesteUrl={jupiterUrl}
         feilmelding={t.feilmelding}
+        fryst={fryst}
       />
     </OppgaveWrapper>
   )

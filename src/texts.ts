@@ -135,7 +135,8 @@ const no = {
     rett: 'Koden er riktig!',
     videre: 'Gå videre',
     provKoden: 'Prøv koden',
-    tidsstraff: 'Du får timeout i 20 sekunder for feil svar.'
+    tidsstraff: 'Du får timeout i 20 sekunder for feil svar.',
+    timeoutFerdig: 'Timeout ferdig, du kan prøve igjen.'
   },
   Venus: {
     title: 'uu spill - Venus',
@@ -390,7 +391,8 @@ const en = {
     rett: 'The code is correct!',
     videre: 'Go further',
     provKoden: 'Try the code',
-    tidsstraff: 'You will get a timeout of 30 seconds for an incorrect answer.'
+    tidsstraff: 'You will get a timeout of 30 seconds for an incorrect answer.',
+    timeoutFerdig: 'Timeout finished, you can try again.'
   },
   Venus: {
     title: 'uu spill - Venus',

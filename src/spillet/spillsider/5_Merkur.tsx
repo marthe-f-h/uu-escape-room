@@ -51,7 +51,12 @@ export const Merkur = () => {
         </form>
       </div>
 
-      <ResultatBox harRiktigKode={harRiktigKode} gave={t.gave} nesteUrl={plutoUrl} />
+      <ResultatBox
+        harRiktigKode={harRiktigKode}
+        gave={t.gave}
+        nesteUrl={plutoUrl}
+        fryst={fryst}
+      />
     </OppgaveWrapper>
   )
 }

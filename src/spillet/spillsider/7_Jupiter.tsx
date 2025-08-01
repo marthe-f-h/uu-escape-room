@@ -79,6 +79,7 @@ export const Jupiter = () => {
         gave={t.gave}
         nesteUrl={sluttenUrl}
         feilmelding={t.feilmelding}
+        fryst={fryst}
       />
     </OppgaveWrapper>
   )

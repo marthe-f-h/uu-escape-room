@@ -12,7 +12,7 @@ export const useKode = (
 
 	const [kode, setKode] = useState('')
 	const [harRiktigKode, setHarRiktigKode] = useState<boolean>()
-	const [fryst, setFryst] = useState<boolean>(false)
+  const [fryst, setFryst] = useState<boolean>()
 
 	const brukKode = (nyesteKode?: string) => {
 		const harRiktigKode = losning.some(

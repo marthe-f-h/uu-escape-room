@@ -76,6 +76,9 @@ body {
 .meny-knapp:active {
 	background: #ffe1aa;
 }
+.meny-knapp-active {
+	background: #ffe1aa;
+}
 
 .golden-panel {
   background: linear-gradient(to bottom, #f1ead7, #ecdfc2);
