@@ -64,7 +64,8 @@ const no = {
     },
     step4: {
       navn: 'Ferdig',
-      tekst: 'Gratulerer, du har fullført testen!'
+      tekst:
+        'Gratulerer, du har fullført testen! Har du testet med å skjule innholdet?'
     },
     alert: 'Du har svart',
     knapp: 'Svar'
@@ -323,7 +324,8 @@ const en = {
     },
     step4: {
       navn: 'Finished',
-      tekst: 'Congratulations, you have completed the test!'
+      tekst:
+        'Congratulations, you have completed the test! Have you also tried the tests with hiding the content?'
     },
     alert: 'You have answered',
     knapp: 'Answer'

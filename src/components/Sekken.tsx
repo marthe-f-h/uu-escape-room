@@ -50,10 +50,13 @@ export const Sekken = () => {
           id="sekk-panel"
           aria-label={t.overskrift}
           role="region"
-          className="flex flex-wrap items-center gap-4 p-4 border-l border-b border-r border-[#d8a33c] rounded-b-md"
+          className="p-4 border-l border-b border-r border-[#d8a33c] rounded-b-md"
         >
           {sekkBeholdning.length > 0 ? (
-            <ul>
+            <ul
+              className="flex flex-wrap items-center gap-4"
+              aria-label={t.overskrift}
+            >
               {sekkBeholdning.map((item, index) => (
                 <li key={`sekk-item-${index}`} className="sekk-item">
                   <img src={getBilde(item)} alt={t[item]} className="h-16" />

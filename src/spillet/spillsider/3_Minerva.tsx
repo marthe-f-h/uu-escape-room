@@ -24,10 +24,10 @@ export const Minerva = () => {
       <div>
         <BodyLong className="mb-4">{t.oppgave}</BodyLong>
 
-        <div className="flex mb-4">
-          <img src={imgMars} className="h-[15rem]" alt={t.bilder[0]} />
-          <img src={imgMerkur} alt={t.bilder[1]} className="h-[15rem]" />
-          <img src={imgApollo} className="h-[15rem] ml-[-1px]" alt={t.bilder[2]} />
+        <div className="flex flex-wrap mb-4">
+          <img src={imgMars} className="h-[10rem]" alt={t.bilder[0]} />
+          <img src={imgMerkur} alt={t.bilder[1]} className="h-[10rem]" />
+          <img src={imgApollo} className="h-[10rem] ml-[-1px]" alt={t.bilder[2]} />
         </div>
 
         <form
