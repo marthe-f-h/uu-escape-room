@@ -258,7 +258,8 @@ const no = {
       '... Og så, like plutselig som det startet: stillhet. Når du åpner øynene igjen, er Jupiter borte. Tempelet er ikke lenger det som var i underverdenen, men der det hele begynte.',
       'Rommet er stille, sollyset faller svakt inn gjennom høye vinduer. Du er alene. Midt i rommet, på en pidestall av stein, ligger en gjenstand: Apollos lyre. Den gløder svakt - som om små gnister av Jupiters lyn ble værende igjen i strengene. Du løfter den, den er lett, men tung av mening. Med lyren i hånden starter du på ferden tilbake til din keiser - ikke som den samme som reiste, men en som nå har gudenes gunst.',
       'Rop ut din seiersglede så vi vet du har vunnet!'
-    ]
+    ],
+    lyren: 'Apollos lyre'
   }
 } as const
 
@@ -517,7 +518,8 @@ const en = {
       '...And then, just as suddenly as it began: silence. When you open your eyes again, Jupiter is gone. The temple is no longer what it was in the underworld, but where it all began.',
       "The room is quiet, the sunlight falls weakly through high windows. You are alone. In the middle of the room, on a pedestal of stone, lies an object: The lyre of Apollo. It glows weakly - as if small sparks of Jupiter's lightning remained in the strings. You lift it, it is light, but heavy with meaning. With the lyre in your hand, you start on the journey back to your emperor - not as the same who left, but one who now has the favor of the gods.",
       'Shout out your joy of victory so we know you have won!'
-    ]
+    ],
+    lyren: 'The lyre of Apollo'
   }
 } as const
 
