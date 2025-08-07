@@ -5,7 +5,7 @@ import { ResultatBox } from '../../components/ResultatBox'
 import { neptunUrl } from '../../constants'
 import imgApollo from '../bilder/Apollo.png'
 import imgMars from '../bilder/Mars.png'
-import imgMerkur from '../bilder/Merkur.jpg'
+import imgMerkur from '../bilder/Merkur.png'
 import { useKode } from '../useKode'
 import { Guder } from '../utils'
 
