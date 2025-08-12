@@ -403,10 +403,10 @@ const en = {
     title: 'uu spill - Venus',
     overskrift: 'A riddle from Venus',
     oppgave: [
-      'Low where whispers fold the edge of sleep,',
+      'Low where whispers fold the edge of sleep',
       'I wander halls of ember with just a memory',
-      'Ghosts linger in the breath between each step,',
-      'Hushed paths open when the small signs lie,',
+      'Ghosts linger in the breath between each step',
+      'Hushed paths open when the small signs lie',
       'Time bows to the honest brave'
     ],
     oppgaveLabel: 'What is the code?',
