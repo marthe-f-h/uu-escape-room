@@ -29,7 +29,7 @@ const getBilde = (sekkeType: SekkBeholdingType) => {
 export const Sekken = () => {
   const { text, sekkBeholdning } = useAppContext()
   const t = text.Sekken
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   return (
     <div className="">

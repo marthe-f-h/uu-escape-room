@@ -195,6 +195,7 @@ const no = {
       'Statue av Merkur. Statuen holder en steintavle der det står: "Jeg er ikke sannferdig"',
       'Statue av Apollo. Statuen holder en steintavle der det står: "Merkur er løgneren"'
     ],
+    hint: 'Bilder inneholder mer enn det øyet ser',
     oppgaveLabel: 'Hvem er den sannferdige?',
     gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
   },
@@ -231,6 +232,7 @@ const no = {
       'Du finner frem posen med mynter du fant på skipet og heller dem utover bakken.'
     ],
     oppgaveLabel: 'Hvor mye må du betale Pluto?',
+    bilde: 'En tom pose som ligger på bakken',
     lettMynt: 'Lett mynt',
     tungMynt: 'Tung mynt',
     knapp: 'Betal Pluto',
@@ -394,17 +396,17 @@ const en = {
     rett: 'The code is correct!',
     videre: 'Go further',
     provKoden: 'Try the code',
-    tidsstraff: 'You will get a timeout of 30 seconds for an incorrect answer.',
+    tidsstraff: 'You will get a timeout of 20 seconds for an incorrect answer.',
     timeoutFerdig: 'Timeout finished, you can try again.'
   },
   Venus: {
     title: 'uu spill - Venus',
     overskrift: 'A riddle from Venus',
     oppgave: [
-      'Far below, where shadows shroud the mind',
-      'Bustling life is just a memory',
-      'Souls wander, but the path is narrow',
-      'An echo of silence is all there is to find',
+      'Low where whispers fold the edge of sleep,',
+      'I wander halls of ember with just a memory',
+      'Ghosts linger in the breath between each step,',
+      'Hushed paths open when the small signs lie,',
       'Time bows to the honest brave'
     ],
     oppgaveLabel: 'What is the code?',
@@ -456,6 +458,7 @@ const en = {
       'Statue of Mercury. The statue holds a stone tablet that says: "I am not truthful"',
       'Statue of Apollo. The statue holds a stone tablet that says: "Mercury is the liar"'
     ],
+    hint: 'Pictures contain more than meets the eye',
     oppgaveLabel: 'Who is the truthful one?',
     gave: 'Minerva gives you a helmet that you can take with you on your journey. (You will find it in your backpack)'
   },
@@ -490,6 +493,7 @@ const en = {
       'The path you have chosen leads you to the top of the mountain. Surrounded by dark fog, Pluto awaits you in front of a small temple. He says: "No soul passes without paying"',
       'You take out the bag of coins you found on the ship and pour them onto the ground.'
     ],
+    bilde: 'An empty bag lying on the ground',
     oppgaveLabel: 'How much do you have to pay Pluto?',
     lettMynt: 'Light coin',
     tungMynt: 'Heavy coin',

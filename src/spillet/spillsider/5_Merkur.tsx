@@ -12,7 +12,7 @@ export const Merkur = () => {
 
   const { kode, harRiktigKode, fryst, setKode, brukKode } = useKode(
     ['vidi'],
-    'Pluto',
+    'Pluto_0',
     true
   )
 
@@ -27,28 +27,28 @@ export const Merkur = () => {
         <BodyLong className="mb-4">{t.oppgave[0]}</BodyLong>
         <BodyLong className="mb-4 blur">{t.oppgave[1]}</BodyLong>
 
-        <form
-          onSubmit={(e) => {
+        <RadioGroup
+          legend={t.oppgaveLabel}
+          description={text.kode.tidsstraff}
+          className="blur"
+          onChange={setKode}
+          value={kode}
+          size="small"
+        >
+          <Radio value="vini">Vini</Radio>
+          <Radio value="vidi">Vidi</Radio>
+          <Radio value="vici">Vici</Radio>
+        </RadioGroup>
+        <button
+          className="mt-4 gold-button"
+          disabled={fryst}
+          onClick={(e) => {
             e.preventDefault()
             brukKode()
           }}
         >
-          <RadioGroup
-            legend={t.oppgaveLabel}
-            description={text.kode.tidsstraff}
-            className="blur"
-            onChange={setKode}
-            value={kode}
-            size="small"
-          >
-            <Radio value="vini">Vini</Radio>
-            <Radio value="vidi">Vidi</Radio>
-            <Radio value="vici">Vici</Radio>
-          </RadioGroup>
-          <button className="mt-4 gold-button" disabled={fryst}>
-            {text.kode.provKoden}
-          </button>
-        </form>
+          {text.kode.provKoden}
+        </button>
       </div>
 
       <ResultatBox

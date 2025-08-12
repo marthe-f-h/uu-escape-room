@@ -7,6 +7,7 @@ import { jupiterUrl } from '../../constants'
 import type { Texts } from '../../texts'
 import { useKode } from '../useKode'
 import { Guder } from '../utils'
+import imgPose from '../bilder/pose_tom.png'
 
 const erFalsk = (mynt: string) => mynt === '2' || mynt === '3' || mynt === '5'
 
@@ -58,7 +59,8 @@ export const Pluto = () => {
           description={text.kode.tidsstraff}
           size="small"
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 items-end">
+            <img src={imgPose} alt={t.bilde} className="h-[5rem]" />
             {(['1', '2', '3', '4', '5', '6'] as const).map((value) => (
               <Coin
                 key={`pluto-${value}`}
@@ -110,7 +112,7 @@ const Coin = <T extends string>({
     aria-checked={checked}
     aria-label={fake ? t.lettMynt : t.tungMynt}
     onClick={() => onChange(!checked, value)}
-    className={`cursor-pointer rounded-full w-[3rem] h-[3rem] max-w-md aspect-square  bg-[#827f7c] transition-border duration-200 border-5 ${
+    className={`cursor-pointer mb-2 rounded-full w-[2.2rem] h-[2.2rem] max-w-md aspect-square  bg-[#827f7c] transition-border duration-200 border-3 ${
       checked ? 'border-[#2a2c34]' : 'border-[#827f7c]'
     }`}
   />

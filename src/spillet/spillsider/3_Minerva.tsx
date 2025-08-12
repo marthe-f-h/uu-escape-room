@@ -20,7 +20,12 @@ export const Minerva = () => {
 	)
 
 	return (
-    <OppgaveWrapper title={t.title} overskrift={t.overskrift} gud={Guder.Minerva}>
+    <OppgaveWrapper
+      title={t.title}
+      overskrift={t.overskrift}
+      gud={Guder.Minerva}
+      hints={[t.hint]}
+    >
       <div>
         <BodyLong className="mb-4">{t.oppgave}</BodyLong>
 

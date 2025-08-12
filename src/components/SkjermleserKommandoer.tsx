@@ -5,7 +5,7 @@ import { useAppContext } from '../AppContext'
 
 export const SkjermleserKommandoer = () => {
   const t = useAppContext().text.SkjermleserKommandoer
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   return (
     <div>

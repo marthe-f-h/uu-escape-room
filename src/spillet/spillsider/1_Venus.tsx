@@ -11,9 +11,9 @@ export const Venus = () => {
 	const t = text.Venus
 
 	const { kode, harRiktigKode, setKode, brukKode } = useKode(
-		['lyset', 'fbsat'],
-		'Mars'
-	)
+    ['lyset', 'light'],
+    'Mars'
+  )
 
 	return (
 		<OppgaveWrapper
