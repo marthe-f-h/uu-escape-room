@@ -36,7 +36,12 @@ export const Jupiter = () => {
   }
 
   return (
-    <OppgaveWrapper title={t.title} overskrift={t.overskrift} gud={Guder.Jupiter}>
+    <OppgaveWrapper
+      title={t.title}
+      overskrift={t.overskrift}
+      gud={Guder.Jupiter}
+      hints={[t.hint[0], t.hint[1]]}
+    >
       <div>
         <BodyLong className="mb-4">{t.oppgave[0]}</BodyLong>
         <BodyLong className="mb-4">{t.oppgave[1]}</BodyLong>

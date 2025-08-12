@@ -251,6 +251,7 @@ const no = {
     oppgaveLabel: 'Velg rutene for å påkalle evigheten.',
     kodeVisning: 'Valgt kombinasjon: ',
     feilmelding: 'Du har ikke valgt riktig ruter.',
+    hint: ['Orbis. Ingen begynnelse ingen ende.', 'o'],
     gave: 'Jupiter hever hånden - og i det samme kaster han lynet. Et voldsomt smell. Så: Lys. Altoppslukende, blendende lys, som om solen selv eksploderer foran deg. Du lukker øynene - men det er som om lyset trenger igjennom alt. Kropp. Tanke. Sjel. Tiden selv... '
   },
   Slutten: {
@@ -513,6 +514,7 @@ const en = {
     oppgaveLabel: 'Choose the squares to invoke eternity.',
     kodeVisning: 'Selected combination: ',
     feilmelding: 'You have not chosen the correct squares.',
+    hint: ['Orbis. No beginning, no end.', 'o'],
     gave: 'Jupiter raises his hand - and at the same time he throws the lightning. A violent bang. Then: Light. All-consuming, burning light, as if the sun itself explodes before you. You close your eyes - but it is as if the light burns through everything. Body. Thought. Soul. Time itself...'
   },
   Slutten: {
