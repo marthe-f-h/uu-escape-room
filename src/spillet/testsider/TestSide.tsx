@@ -71,7 +71,7 @@ export const TestSide = () => {
 
       <div className="bg-[#4b3e2a] h-[1px] border border-[#4b3e2a]" />
 
-      <div className="grid grid-cols-[auto_1px_1fr] gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-[auto_1px_1fr] gap-4">
         <nav aria-label={t.navigasjon}>
           <Stepper
             aria-label={t.overskrift}

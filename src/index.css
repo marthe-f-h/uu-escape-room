@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 @import '@navikt/ds-css' layer(components);
 
+@theme {
+  --breakpoint-sm: 44rem;
+	--breakpoint-md: 54rem;
+	--breakpoint-lg: 57rem;
+}
+
 body {
 	background-color: #121219;
 	font-family: 'Cinzel', serif;
@@ -46,13 +52,16 @@ body {
 	border-radius: 8px;
 	padding: 1rem;
 	color: var(--meny-text-color);
-	margin: 1rem;
 }
 
 .meny{
-	height: 95vh;
+	height: fit-content;
 	margin-right: 0;
 	overflow: auto;
+
+	@media (width >= 40rem /* 640px */) {
+    height: 95vh;
+  }
 }
 
 .meny-knapp{
@@ -85,10 +94,13 @@ body {
 	border: 3px solid var(--border-color);
 	border-radius: 12px;
 	padding: 0.5rem;
-	margin: 1rem;
-  height: 95vh;
+  height: fit-content;
 	overflow: auto;
 	padding: 1rem;
+
+	@media (width >= 40rem /* 640px */) {
+    height: 95vh;
+  }
 }
 
 .navds-radio:hover {

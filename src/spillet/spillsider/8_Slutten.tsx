@@ -18,7 +18,7 @@ export const Slutten = () => {
   }, [])
 
   return (
-    <div className="h-screen overflow-auto p-4 pl-6 golden-panel grid grid-cols-[60%_1fr] gap-4">
+    <div className="h-screen overflow-auto p-4 pl-6 golden-panel grid grid-cols-1 lg:grid-cols-[60%_1fr] gap-4">
       <div>
         <Heading
           level="1"

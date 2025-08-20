@@ -40,32 +40,27 @@ export const App = () => {
 	}, [navigate])
 
 	return (
-		<div
-			className="grid"
-			style={{
-				gridTemplateColumns: '20rem auto'
-			}}
-		>
-			<aside className="blue_box meny flex flex-col gap-4">
-				<SprakVelger />
-				<SkjermleserKommandoer />
-				<Sekken />
-			</aside>
-			<main>
-				<Routes>
-					<Route path={basePath} element={<Velkomstside />} />
-					<Route path={testUrl} element={<TestSide />} />
-					<Route path={startUrl} element={<Start />} />
-					<Route path={venusUrl} element={<Venus />} />
-					<Route path={marsUrl} element={<Mars />} />
-					<Route path={minervaUrl} element={<Minerva />} />
-					<Route path={neptunUrl} element={<Neptun />} />
-					<Route path={merkurUrl} element={<Merkur />} />
-					<Route path={plutoUrl} element={<Pluto />} />
-					<Route path={jupiterUrl} element={<Jupiter />} />
-					<Route path={sluttenUrl} element={<Slutten />} />
-				</Routes>
-			</main>
-		</div>
-	)
+    <div className="m-4 grid grid-cols-1 sm:grid-cols-[20rem_auto] gap-4">
+      <aside className="blue_box meny flex flex-col gap-4 mr-4">
+        <SprakVelger />
+        <SkjermleserKommandoer />
+        <Sekken />
+      </aside>
+      <main>
+        <Routes>
+          <Route path={basePath} element={<Velkomstside />} />
+          <Route path={testUrl} element={<TestSide />} />
+          <Route path={startUrl} element={<Start />} />
+          <Route path={venusUrl} element={<Venus />} />
+          <Route path={marsUrl} element={<Mars />} />
+          <Route path={minervaUrl} element={<Minerva />} />
+          <Route path={neptunUrl} element={<Neptun />} />
+          <Route path={merkurUrl} element={<Merkur />} />
+          <Route path={plutoUrl} element={<Pluto />} />
+          <Route path={jupiterUrl} element={<Jupiter />} />
+          <Route path={sluttenUrl} element={<Slutten />} />
+        </Routes>
+      </main>
+    </div>
+  )
 }

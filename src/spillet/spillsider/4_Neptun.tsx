@@ -5,38 +5,37 @@ import { ResultatBox } from '../../components/ResultatBox'
 import { merkurUrl } from '../../constants'
 import { useKode } from '../useKode'
 import { Guder } from '../utils'
-import { ButtonCell } from '../../components/ButtonCell'
 
 export const Neptun = () => {
-	const { text } = useAppContext()
-	const t = text.Neptun
+  const { text } = useAppContext()
+  const t = text.Neptun
 
-	const { kode, harRiktigKode, setKode, brukKode } = useKode(
-		['v,v,v'],
-		'Merkur',
-		false,
-		false
-	)
+  const { kode, harRiktigKode, setKode, brukKode } = useKode(
+    ['v,v,v'],
+    'Merkur',
+    false,
+    false
+  )
 
-	const registrerTrykk = (
-		value: 'i' | 'ii' | 'iii' | 'iv' | 'v' | 'vi' | 'vii' | 'viii' | 'ix'
-	) => {
-		if (kode.length === 0) {
-			setKode(value)
-		} else {
-			const nyKode =
-				kode.split(',').length < 3
-					? kode.concat(`,${value}`)
-					: kode.split(',').slice(1).concat(value).join(',')
-			setKode(nyKode)
+  const registrerTrykk = (
+    value: 'i' | 'ii' | 'iii' | 'iv' | 'v' | 'vi' | 'vii' | 'viii' | 'ix'
+  ) => {
+    if (kode.length === 0) {
+      setKode(value)
+    } else {
+      const nyKode =
+        kode.split(',').length < 3
+          ? kode.concat(`,${value}`)
+          : kode.split(',').slice(1).concat(value).join(',')
+      setKode(nyKode)
 
-			if (nyKode.split(',').length === 3) {
-				brukKode(nyKode)
-			}
-		}
-	}
+      if (nyKode.split(',').length === 3) {
+        brukKode(nyKode)
+      }
+    }
+  }
 
-	return (
+  return (
     <OppgaveWrapper
       title={t.title}
       overskrift={t.overskrift}
@@ -47,7 +46,7 @@ export const Neptun = () => {
         <BodyLong className="mb-4">{t.oppgave[0]}</BodyLong>
         <BodyLong className="sr-only">{t.oppgave[1]}</BodyLong>
 
-        <div className="rounded-full w-[18rem] max-w-md aspect-square bg-[#4b3e2a] mb-4 flex items-center justify-center">
+        <div className="rounded-full w-[19rem] max-w-md aspect-square bg-[#4b3e2a] mb-4 flex items-center justify-center">
           <div className="grid grid-cols-3 gap-px bg-[#ffe1aa] text-[#ffe1aa] w-fit">
             {(['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'] as const).map(
               (value, index) => (
@@ -82,3 +81,30 @@ export const Neptun = () => {
     </OppgaveWrapper>
   )
 }
+
+const ButtonCell = <T extends string>({
+  value,
+  label,
+  color,
+  hideValue,
+  onClick
+}: {
+  value: T
+  label: string
+  color?: string
+  hideValue?: boolean
+  onClick: (value: T) => void
+}) => (
+  <button
+    aria-label={label}
+    className={`cursor-pointer ${
+      color || 'bg-[#4b3e2a]'
+    } w-[4rem] aspect-square p-4 flex items-center justify-center`}
+    onClick={(e) => {
+      e.preventDefault()
+      onClick(value)
+    }}
+  >
+    {hideValue ? '' : value}
+  </button>
+)
