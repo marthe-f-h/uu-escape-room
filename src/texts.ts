@@ -73,7 +73,28 @@ const no = {
   },
   DarligUU: {
     title: 'Dårlig universell utforming',
-    info: 'Dårlig universell utforming kan skape barrierer for brukere med funksjonsnedsettelser. Prøv deg frem med skjermleser på de neste klassiske feilene.'
+    info: 'Dårlig universell utforming kan skape barrierer for brukere med funksjonsnedsettelser. Prøv deg frem med skjermleser på de neste klassiske feilene.',
+    overskrift1: 'Test knapper og linker',
+    link1: 'Les mer',
+    link2: 'Klikk her',
+    kontrast: 'Tell antall vanlige uu-feil du ser på siden.',
+    overskrift2: 'Test bilder',
+    feilmelding: 'Du får feil svar uansett',
+    input: 'Hvor mange feil finner du?',
+    overskrift3: 'Test form',
+    falskKnapp: 'Fasit',
+    falskKnappAlert: 'Du trykket på den falske knappen! Hva er feil med den?',
+    fasit: [
+      'Overskriftstruktur',
+      '<a> ser ut som tekst',
+      '<a> navn uten kontekst',
+      'Tekst med dårlig kontrast',
+      'Bilder uten alt-tekst',
+      '<input> uten label, kun placeholder',
+      'Dynamisk innhold blir ikke "annonsert"',
+      '<div> kodet som knapp men mangler å kunne nåes med tastatur / tab',
+      'Knapp med ikon men uten alternativ tekst'
+    ]
   },
   SkjermleserKommandoer: {
     overskrift: 'Skjermleserkommandoer',
@@ -343,7 +364,28 @@ const en = {
   },
   DarligUU: {
     title: 'Bad accessibility',
-    info: 'Bad accessibility can create barriers for users with disabilities. Try experimenting with a screen reader on the next classic errors.'
+    info: 'Bad accessibility can create barriers for users with disabilities. Try experimenting with a screen reader on the next classic errors.',
+    overskrift1: 'Test links and buttons',
+    link1: 'Read more',
+    link2: 'Click here',
+    kontrast: 'Tell how many common accessibility mistakes you see on the page.',
+    overskrift2: 'Test images',
+    feilmelding: 'You get the wrong answer anyway',
+    input: 'How many mistakes do you find?',
+    overskrift3: 'Test form',
+    falskKnapp: 'Answer',
+    falskKnappAlert: 'You pressed the wrong button! What is wrong with it?',
+    fasit: [
+      'Heading structure',
+      '<a> looks like text',
+      '<a> name without context',
+      'Text with poor contrast',
+      'Images without alt text',
+      '<input> without label, only placeholder',
+      'Dynamic content is not announced',
+      '<div> coded as button but lacks keyboard/tab access',
+      'Button with icon but without alternative text'
+    ]
   },
   SkjermleserKommandoer: {
     overskrift: 'Screen reader commands',
