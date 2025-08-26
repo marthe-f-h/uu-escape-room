@@ -32,11 +32,11 @@ export const Velkomstside = () => {
         <Link as={RouterLink} to={testUrl} className="gold-button">
           {t.test}
         </Link>
-        <Link as={RouterLink} to={darligUUUrl} className="gold-button">
-          {t.darligUU}
-        </Link>
         <Link as={RouterLink} to={startUrl} className="gold-button">
           {t.startLink}
+        </Link>
+        <Link as={RouterLink} to={darligUUUrl} className="gold-button">
+          {t.darligUU}
         </Link>
       </div>
     </div>

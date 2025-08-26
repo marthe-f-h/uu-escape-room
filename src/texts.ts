@@ -60,7 +60,8 @@ const no = {
       },
       test2: {
         trigger: 'Trigg en alertmelding',
-        alert: 'Her kommer oppdateringene med aria-live'
+        alert:
+          'Her kommer oppdateringer med aria-live. Slik kan hint komme i spillet :)'
       }
     },
     step4: {
@@ -69,7 +70,8 @@ const no = {
         'Gratulerer, du har fullført testen! Har du testet med å skjule innholdet?'
     },
     alert: 'Du har svart',
-    knapp: 'Svar'
+    knapp: 'Svar',
+    neste: 'Neste'
   },
   DarligUU: {
     title: 'Dårlig universell utforming',
@@ -200,10 +202,7 @@ const no = {
       { slag: 'Philippi', legion: 'Legio Mars', utfall: 'Seier' },
       { slag: 'Arausio', legion: 'Legio Mars', utfall: 'Seier' },
       { slag: 'Gergovia', legion: 'Legio Mercurii', utfall: 'Seier' },
-      { slag: 'Genovia', legion: 'Legio Mia', utfall: 'Seier' },
       { slag: 'Munda', legion: 'Legio Mars', utfall: 'Seier' },
-      { slag: 'Arendell', legion: 'Legio Elsa', utfall: 'Seier' },
-      { slag: 'Rappe', legion: 'Legio Ferrata', utfall: 'Seier' },
       { slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Seier' }
     ],
     oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
@@ -351,7 +350,8 @@ const en = {
       },
       test2: {
         trigger: 'Trigger an alert message',
-        alert: 'Here are the updates with aria-live'
+        alert:
+          'Here are the updates with aria-live. This is how hints can appear in the game :)'
       }
     },
     step4: {
@@ -360,7 +360,8 @@ const en = {
         'Congratulations, you have completed the test! Have you also tried the tests with hiding the content?'
     },
     alert: 'You have answered',
-    knapp: 'Answer'
+    knapp: 'Answer',
+    neste: 'Next'
   },
   DarligUU: {
     title: 'Bad accessibility',
@@ -489,10 +490,7 @@ const en = {
       { slag: 'Philippi', legion: 'Legio Mars', utfall: 'Victory' },
       { slag: 'Arausio', legion: 'Legio Mars', utfall: 'Victory' },
       { slag: 'Gergovia', legion: 'Legio Mercurii', utfall: 'Victory' },
-      { slag: 'Genovia', legion: 'Legio Mia', utfall: 'Victory' },
       { slag: 'Munda', legion: 'Legio Mars', utfall: 'Victory' },
-      { slag: 'Arendell', legion: 'Legio Elsa', utfall: 'Victory' },
-      { slag: 'Rappe', legion: 'Legio Ferrata', utfall: 'Victory' },
       { slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Victory' }
     ],
     oppgaveLabel: 'How many victories does the Legion of Mars have?',
@@ -505,8 +503,6 @@ const en = {
     overskrift: 'A riddle from Minerva',
     oppgave:
       'Minerva meets you and shows you the way to a room with three statues. The statues are of the gods Mars, Mercury, and Apollo. Each statue holds a tablet, one is truthful, one lies, and one we cannot know if it speaks truth or lies.',
-    gaate:
-      'The first statue is Apollo, the tablet says Mercury is the truthful one. By Mercury\'s tablet it says: "I am not truthful". By Mars\' tablet it says that Mercury is the liar.',
     bilder: [
       'Statue of Mars. The statue holds a stone tablet that says: "Mercury is the truthful one"',
       'Statue of Mercury. The statue holds a stone tablet that says: "I am not truthful"',

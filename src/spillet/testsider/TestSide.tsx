@@ -1,53 +1,54 @@
 import {
-	BodyShort,
-	Checkbox,
-	CheckboxGroup,
-	Heading,
-	Radio,
-	RadioGroup,
-	Stepper,
-	Switch,
-	Table,
-	TextField
+  Alert,
+  BodyShort,
+  Checkbox,
+  CheckboxGroup,
+  Heading,
+  Radio,
+  RadioGroup,
+  Stepper,
+  Switch,
+  Table,
+  TextField
 } from '@navikt/ds-react'
 import { useEffect, useRef, useState } from 'react'
 import { useAppContext } from '../../AppContext'
 import img from './blueberry.png'
 
 export const TestSide = () => {
-	const [hideScreen, setHideScreen] = useState(false)
-	const [activeStep, setActiveStep] = useState(1)
-	const [showAlert, setShowAlert] = useState(false)
-	const headingRef = useRef<HTMLHeadingElement>(null)
-	const step1Ref = useRef<HTMLHeadingElement>(null)
-	const step2Ref = useRef<HTMLHeadingElement>(null)
-	const step3Ref = useRef<HTMLHeadingElement>(null)
-	const step4Ref = useRef<HTMLParagraphElement>(null)
-	const t = useAppContext().text.TestSide
-	document.title = t.title
+  const [hideScreen, setHideScreen] = useState(false)
+  const [activeStep, setActiveStep] = useState(1)
+  const [showAlert, setShowAlert] = useState(false)
+  const headingRef = useRef<HTMLHeadingElement>(null)
+  const step1Ref = useRef<HTMLHeadingElement>(null)
+  const step2Ref = useRef<HTMLHeadingElement>(null)
+  const step3Ref = useRef<HTMLHeadingElement>(null)
+  const step4Ref = useRef<HTMLParagraphElement>(null)
+  const t = useAppContext().text.TestSide
+  document.title = t.title
 
-	useEffect(() => {
-		if (headingRef.current) {
-			headingRef.current.focus()
-		}
-	}, [])
+  useEffect(() => {
+    if (headingRef.current) {
+      headingRef.current.focus()
+    }
+  }, [])
 
-	const changeStep = (step: number) => {
-		setActiveStep(step)
-		setTimeout(() => {
-			if (step === 1 && step1Ref.current) {
-				step1Ref.current.focus()
-			} else if (step === 2 && step2Ref.current) {
-				step2Ref.current.focus()
-			} else if (step === 3 && step3Ref.current) {
-				step3Ref.current.focus()
-			} else if (step === 4 && step4Ref.current) {
-				step4Ref.current.focus()
-			}
-		}, 150)
-	}
+  const changeStep = (step: number) => {
+    setActiveStep(step)
+    setTimeout(() => {
+      if (step === 1 && step1Ref.current) {
+        step1Ref.current.focus()
+      } else if (step === 2 && step2Ref.current) {
+        step2Ref.current.focus()
+      } else if (step === 3 && step3Ref.current) {
+        step3Ref.current.focus()
+      } else if (step === 4 && step4Ref.current) {
+        step4Ref.current.focus()
+      }
+    }, 150)
+  }
 
-	return (
+  return (
     <div className="flex flex-col gap-4 h-screen overflow-auto p-4 pl-6 golden-panel">
       <Heading
         level="1"
@@ -239,18 +240,25 @@ export const TestSide = () => {
                 className="mt-4 gold-button"
                 onClick={() => setShowAlert(!showAlert)}
               >
-                {t.step3.test2.trigger}
+                {t.knapp}
               </button>
 
               {showAlert && (
-                <BodyShort role="alert" aria-atomic="true" className="gold-alert">
-                  {t.step3.test2.alert}
-                </BodyShort>
-              )}
+                <>
+                  <Alert
+                    variant="warning"
+                    role="alert"
+                    size="small"
+                    aria-atomic="true"
+                  >
+                    {t.step3.test2.alert}
+                  </Alert>
 
-              <button className="mt-4 gold-button" onClick={() => changeStep(4)}>
-                {t.knapp}
-              </button>
+                  <button className="mt-4 gold-button" onClick={() => changeStep(4)}>
+                    {t.neste}
+                  </button>
+                </>
+              )}
             </div>
           )}
 
