@@ -9,3 +9,4 @@ export const plutoUrl = `${basePath}/pluto`
 export const neptunUrl = `${basePath}/neptun`
 export const jupiterUrl = `${basePath}/jupiter`
 export const sluttenUrl = `${basePath}/slutt`
+export const darligUUUrl = `${basePath}/darlig-uu`

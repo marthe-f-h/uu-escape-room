@@ -8,6 +8,7 @@ const no = {
     beskrivelse:
       'Dette er et spill for å lære å bruke skjermleser. For å løse escape room oppgavene må du bruke skjermleser for å få med deg hintene og navigere i spillet. Noen sider kan du se blurret, andre kan du ikke se noen ting. Lykke til!',
     test: 'Test skjermleser',
+    darligUU: 'Test dårlig uu',
     startLink: 'Start spillet'
   },
   TestSide: {
@@ -69,6 +70,10 @@ const no = {
     },
     alert: 'Du har svart',
     knapp: 'Svar'
+  },
+  DarligUU: {
+    title: 'Dårlig universell utforming',
+    info: 'Dårlig universell utforming kan skape barrierer for brukere med funksjonsnedsettelser. Prøv deg frem med skjermleser på de neste klassiske feilene.'
   },
   SkjermleserKommandoer: {
     overskrift: 'Skjermleserkommandoer',
@@ -262,7 +267,8 @@ const no = {
       'Rommet er stille, sollyset faller svakt inn gjennom høye vinduer. Du er alene. Midt i rommet, på en pidestall av stein, ligger en gjenstand: Apollos lyre. Den gløder svakt - som om små gnister av Jupiters lyn ble værende igjen i strengene. Du løfter den, den er lett, men tung av mening. Med lyren i hånden starter du på ferden tilbake til din keiser - ikke som den samme som reiste, men en som nå har gudenes gunst.',
       'Rop ut din seiersglede så vi vet du har vunnet!'
     ],
-    lyren: 'Apollos lyre'
+    lyren: 'Apollos lyre',
+    testMer: 'Ferdig, men lyst til å teste dårlig universell utforming? Gå videre:'
   }
 } as const
 
@@ -270,6 +276,7 @@ const en = {
   Velkomstside: {
     velkommen: 'Welcome to Escape Room - Favor of the Gods!',
     test: 'Test screen reader',
+    darligUU: 'Test bad accessibility',
     beskrivelse:
       'This is a game to learn how to use a screen reader. To solve the escape room puzzles you will need to use a screen reader to get the hints and navigate the game. Some pages you may see a slightly blurred image, others you may not be able to see anything. Good luck!',
     startLink: 'Start the game'
@@ -333,6 +340,10 @@ const en = {
     },
     alert: 'You have answered',
     knapp: 'Answer'
+  },
+  DarligUU: {
+    title: 'Bad accessibility',
+    info: 'Bad accessibility can create barriers for users with disabilities. Try experimenting with a screen reader on the next classic errors.'
   },
   SkjermleserKommandoer: {
     overskrift: 'Screen reader commands',
@@ -525,7 +536,8 @@ const en = {
       "The room is quiet, the sunlight falls weakly through high windows. You are alone. In the middle of the room, on a pedestal of stone, lies an object: The lyre of Apollo. It glows weakly - as if small sparks of Jupiter's lightning remained in the strings. You lift it, it is light, but heavy with meaning. With the lyre in your hand, you start on the journey back to your emperor - not as the same who left, but one who now has the favor of the gods.",
       'Shout out your joy of victory so we know you have won!'
     ],
-    lyren: 'The lyre of Apollo'
+    lyren: 'The lyre of Apollo',
+    testMer: 'Finished, but want to test bad accessibility? Go ahead:'
   }
 } as const
 
