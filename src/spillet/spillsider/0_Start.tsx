@@ -36,7 +36,7 @@ export const Start = () => {
         <p className="mt-2">{t.mal}</p>
       </div>
       <Link as={RouterLink} to={venusUrl} className="gold-button mt-8">
-        Er du klar? Begynn prøven
+        {t.begynn}
       </Link>
     </div>
   )
