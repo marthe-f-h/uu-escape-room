@@ -128,7 +128,7 @@ const no = {
         { label: 'Slå på / av', value: 'Ctrl + Windows + Enter' },
         { label: 'Stop lesing', value: 'Ctrl' },
         { label: 'Lese linje for linje', value: 'Pil opp / ned' },
-        { label: 'Åpne elementliste', value: 'Caps Lock + fn + F5' },
+        { label: 'Åpne elementliste', value: 'Caps Lock (+ fn) + F5' },
         { label: 'Gå ut av elementliste', value: 'Esc' },
         {
           label: 'Scanne modus på / av',
@@ -182,7 +182,7 @@ const no = {
     hint: 'Starten er viktigere enn det som kommer etter.',
     hint2: 'Koden er på fem tegn.',
     hint3: 'Bruk første bokstav fra hver linje i verset.',
-    gave: 'Venus gir deg en keramikkrukke som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+    gave: 'Venus gir deg en keramikkrukke som du kan ta med deg på veien videre. (Du finner den i sekken)'
   },
   Mars: {
     title: 'uu spill - Mars',
@@ -209,7 +209,7 @@ const no = {
     oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
     hint: 'Skriv slik en keiser ville ha skrevet det.',
     hint2: 'Skriv svaret med romertall',
-    gave: 'Mars gir deg et sverd som du kan ta med deg på vegen videre. (Du finner det i sekken)'
+    gave: 'Mars gir deg et sverd som du kan ta med deg på veien videre. (Du finner det i sekken)'
   },
   Minerva: {
     title: 'uu spill - Minerva',
@@ -223,7 +223,7 @@ const no = {
     ],
     hint: 'Bilder inneholder mer enn det øyet ser',
     oppgaveLabel: 'Hvem er den sannferdige?',
-    gave: 'Minerva gir deg en hjelm som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+    gave: 'Minerva gir deg en hjelm som du kan ta med deg på veien videre. (Du finner den i sekken)'
   },
   Neptun: {
     title: 'uu spill - Neptun',
@@ -243,12 +243,12 @@ const no = {
     title: 'uu spill - Merkur',
     overskrift: 'En gåte fra Merkur',
     oppgave: [
-      'Skipet legger til ved kanten av et fjell med tre veier å velge. Merkur tar i mot deg og gir deg din neste prøve:',
-      'De fleste handler, jeg forstår. Bare den som ser kan forstå. Vini, vidi, vici. Kun min veg vil føre deg over fjellet.'
+      'Skipet legger til ved kanten av et fjell med tre veier å velge. Merkur tar imot deg og gir deg din neste prøve:',
+      'De fleste handler, jeg forstår. Bare den som ser kan forstå. Vini, vidi, vici. Kun min vei vil føre deg over fjellet.'
     ],
-    oppgaveLabel: 'Hvilken veg velger du?',
+    oppgaveLabel: 'Hvilken vei velger du?',
     hint: 'Jeg kom, jeg så, jeg erobret - Julius Cæsar',
-    gave: 'Merkur gir deg en stein som du kan ta med deg på vegen videre. (Du finner den i sekken)'
+    gave: 'Merkur gir deg en stein som du kan ta med deg på veien videre. (Du finner den i sekken)'
   },
   Pluto: {
     title: 'uu spill - Pluto',
@@ -263,8 +263,8 @@ const no = {
     tungMynt: 'Tung mynt',
     knapp: 'Betal Pluto',
     feilmelding: 'Du har ikke betalt Pluto prisen for din sjel.',
-    hint: 'Ekte riktdom veier tungt, det falske kan kun skinne',
-    gave: 'Pluto gir deg en gammel pergamentrull som du kan ta med deg på vegen videre. (Du finner det i sekken)'
+    hint: 'Ekte rikdom veier tungt, det falske kan kun skinne',
+    gave: 'Pluto gir deg en gammel pergamentrull som du kan ta med deg på veien videre. (Du finner det i sekken)'
   },
   Jupiter: {
     title: 'uu spill - Jupiter',
@@ -419,7 +419,7 @@ const en = {
         { label: 'Turn on / off', value: 'Ctrl + Windows + Enter' },
         { label: 'Stop reading', value: 'Ctrl' },
         { label: 'Read line by line', value: 'Up / Down arrow' },
-        { label: 'Open element list', value: 'Caps Lock + fn + F5' },
+        { label: 'Open element list', value: 'Caps Lock (+ fn) + F5' },
         { label: 'Exit element list', value: 'Esc' },
         { label: 'Scan mode on / off', value: 'Caps Lock + Space' },
         { label: 'Read the whole page', value: 'Caps Lock + M' }
