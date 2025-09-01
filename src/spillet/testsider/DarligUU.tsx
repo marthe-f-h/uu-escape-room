@@ -92,7 +92,9 @@ export const DarligUU = () => {
           <Alert variant="info" size="small" className="mt-2">
             <ul>
               {t.fasit.map((item, index) => (
-                <li key={`fasit-${index}`}>{item}</li>
+                <li key={`fasit-${index}`} className="mb-2">
+                  {item}
+                </li>
               ))}
             </ul>
           </Alert>

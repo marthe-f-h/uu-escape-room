@@ -94,7 +94,7 @@ const no = {
       'Bilder uten alt-tekst',
       '<input> uten label, kun placeholder',
       'Dynamisk innhold blir ikke "annonsert"',
-      '<div> kodet som knapp men mangler å kunne nåes med tastatur / tab',
+      '<div> kodet som knapp men mangler å kunne nåes med tastatur / tab / skjermleser skjønner ikke at det er en knapp',
       'Knapp med ikon men uten alternativ tekst'
     ]
   },
@@ -207,7 +207,7 @@ const no = {
       { slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Seier' }
     ],
     oppgaveLabel: 'Hvor mange seiere har legionen til Mars?',
-    hint: 'Skriv slik en keiser ville ha skrevet det.',
+    hint: 'Skriv slik en romersk keiser ville ha skrevet det.',
     hint2: 'Skriv svaret med romertall',
     gave: 'Mars gir deg et sverd som du kan ta med deg på veien videre. (Du finner det i sekken)'
   },
@@ -385,7 +385,7 @@ const en = {
       'Images without alt text',
       '<input> without label, only placeholder',
       'Dynamic content is not announced',
-      '<div> coded as button but lacks keyboard/tab access',
+      '<div> coded as button but lacks keyboard/tab access / screen reader does not recognize it as a button',
       'Button with icon but without alternative text'
     ]
   },
@@ -496,7 +496,7 @@ const en = {
       { slag: 'Dyrrhachium', legion: 'Legio Mars', utfall: 'Victory' }
     ],
     oppgaveLabel: 'How many victories does the Legion of Mars have?',
-    hint: 'Write as an emperor would have written it.',
+    hint: 'Write as a Roman emperor would have written it.',
     hint2: 'Write the answer in Roman numerals',
     gave: 'Mars gives you a sword that you can take with you on your journey. (You will find it in your backpack)'
   },
