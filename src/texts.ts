@@ -518,11 +518,11 @@ const en = {
     title: 'uu game - Neptun',
     overskrift: 'A riddle from Neptune',
     oppgave: [
-      'In the darkness we meet Neptune who takes you aboard the ship that can take you across the sea of oblivion. A grid of Roman numerals is engraved on the rudder.',
-      'Below is a rudder with 9 buttons arranged in 3 rows and 3 columns. Between the buttons, there are visible edges, no edges are against the outer sides.'
+      'In the darkness we meet Neptune who takes you aboard the ship that can take you across the sea of oblivion. A grid of Roman numerals is engraved on the helm.',
+      'Below is a helm with 9 buttons arranged in 3 rows and 3 columns. Between the buttons, there are visible edges, no edges are against the outer sides.'
     ],
     oppgaveLabel:
-      'Before Neptune leaves you, he tells you that "Only by thrice touching the rudder will the ship sail."',
+      'Before Neptune leaves you, he tells you that "Only by thrice touching the helm will the ship sail."',
     kodeVisning: 'Selected combination: ',
     hint: 'Hold your hand three times where all paths cross.',
     gave: 'The ship slowly moves across the sea of oblivion. You find a small bag of coins on the ship that you take with you in your backpack.'
