@@ -179,7 +179,7 @@ const no = {
       'Tiden bøyer seg for de ærlige tapre'
     ],
     oppgaveLabel: 'Hva er koden?',
-    hint: 'Starten er viktigere enn det som kommer etter.',
+    hint: 'Ikke gå langt - ta det først i hver etasje. Ikke alt her er viktig!',
     hint2: 'Koden er på fem tegn.',
     hint3: 'Bruk første bokstav fra hver linje i verset.',
     gave: 'Venus gir deg en keramikkrukke som du kan ta med deg på veien videre. (Du finner den i sekken)'
@@ -467,7 +467,7 @@ const en = {
       'Time bows to the honest brave'
     ],
     oppgaveLabel: 'What is the code?',
-    hint: 'The beginning is more important than what comes after.',
+    hint: "Don't go far - take the first on each floor. Not everything here is important!",
     hint2: 'The code is five characters long.',
     hint3: 'Use the first letter from each line in the verse.',
     gave: 'Venus gives you a ceramic jar that you can take with you on your journey. (You will find it in your backpack)'
