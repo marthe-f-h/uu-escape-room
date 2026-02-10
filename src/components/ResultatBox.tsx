@@ -23,7 +23,7 @@ export const ResultatBox = ({
     <div>
       {harRiktigKode && (
         <>
-          <div className="mt-4" role="alert" aria-atomic="true">
+          <div className="mt-4" role="alert">
             <BodyShort>{text.kode.rett}</BodyShort>
             <BodyShort className="mt-2">{gave}</BodyShort>
           </div>
@@ -33,13 +33,13 @@ export const ResultatBox = ({
         </>
       )}
       {harRiktigKode === false && (
-        <div className="mt-4" role="alert" aria-atomic="true">
+        <div className="mt-4" role="alert">
           {feilmelding || text.kode.feil}
         </div>
       )}
 
       {fryst === false && (
-        <div role="alert" aria-atomic className="sr-only">
+        <div role="alert" className="sr-only">
           {text.kode.timeoutFerdig}
         </div>
       )}

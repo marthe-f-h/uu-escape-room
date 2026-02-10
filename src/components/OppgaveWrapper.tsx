@@ -36,24 +36,22 @@ export const OppgaveWrapper = ({
 	}, [])
 
 	useEffect(() => {
-		if (!hints || hints.length === 0) {
-			return
-		}
-		setTimeout(() => {
-			if (hints.length > 0) {
-				settHint([hints[0]])
-			}
-		}, 3 * 60 * 1000)
+    if (!hints || hints.length <= 0) {
+      return
+    }
+    setTimeout(() => {
+      settHint([hints[0]])
+    }, 3 * 60 * 1000)
 
-		if (hints.length > 1) {
-			setTimeout(() => {
-				settHint(hints)
-			}, 5 * 60 * 1000)
-		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+    if (hints.length > 1) {
+      setTimeout(() => {
+        settHint(hints)
+      }, 5 * 60 * 1000)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
-	return (
+  return (
     <div className="h-screen overflow-auto p-4 pl-6 golden-panel grid grid-cols-1 lg:grid-cols-[60%_1px_1fr] gap-4">
       <div>
         <Heading
@@ -72,18 +70,21 @@ export const OppgaveWrapper = ({
 
       <div className="flex flex-col justify-between">
         {children[1]}
-        {hint.length > 0 && (
-          <div role="alert" aria-atomic="true">
-            <Heading level="2" size="xsmall" className="mt-4 text-2xl mb-2">
-              Hint
-            </Heading>
-            {hint.map((h, index) => (
-              <BodyShort key={`hint-${index}`} className="mb-2">
-                <BodyShort className="blur">{h}</BodyShort>
-              </BodyShort>
-            ))}
-          </div>
-        )}
+
+        <div role="alert">
+          {hint.length > 0 && (
+            <>
+              <Heading level="2" size="xsmall" className="mt-4 text-2xl mb-2">
+                Hint
+              </Heading>
+              {hint.map((h, index) => (
+                <BodyShort key={`hint-${index}`} className="mb-2">
+                  <BodyShort className="blur">{h}</BodyShort>
+                </BodyShort>
+              ))}
+            </>
+          )}
+        </div>
       </div>
     </div>
   )

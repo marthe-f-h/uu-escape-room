@@ -238,27 +238,26 @@ export const TestSide = () => {
 
               <button
                 className="mt-4 gold-button"
-                onClick={() => setShowAlert(!showAlert)}
+                onClick={() => setShowAlert(true)}
               >
                 {t.knapp}
               </button>
 
-              {showAlert && (
-                <>
-                  <Alert
-                    variant="warning"
-                    role="alert"
-                    size="small"
-                    aria-atomic="true"
-                  >
-                    {t.step3.test2.alert}
-                  </Alert>
-
-                  <button className="mt-4 gold-button" onClick={() => changeStep(4)}>
-                    {t.neste}
-                  </button>
-                </>
-              )}
+              <div role="alert">
+                {showAlert && (
+                  <>
+                    <Alert variant="warning" size="small">
+                      {t.step3.test2.alert}
+                    </Alert>
+                    <button
+                      className="mt-4 gold-button"
+                      onClick={() => changeStep(4)}
+                    >
+                      {t.neste}
+                    </button>
+                  </>
+                )}
+              </div>
             </div>
           )}
 
