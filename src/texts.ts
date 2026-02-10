@@ -153,7 +153,7 @@ const no = {
   Sekken: {
     overskrift: 'Sekken',
     tomt: 'Tomt...',
-    Krukke: 'Krukke med tre firkanter',
+    Krukke: 'Krukke med tre firkanter med sine tall',
     Pergament: 'Pergament der det står: Et tu, Brute? - Julius Cæsar',
     Sverd: 'Sverd med inngravering: Veni, Vidi, Vici - Julius Cæsar',
     Hjelm: 'Hjelm med inngravering: To mynter for min sjel',
@@ -441,7 +441,7 @@ const en = {
   Sekken: {
     overskrift: 'Backpack',
     tomt: 'Empty...',
-    Krukke: 'Jar with three squares',
+    Krukke: 'Jar with three squares with their number',
     Pergament: 'Parchment with the inscription: Et tu, Brute? - Julius Caesar',
     Sverd: 'Sword with engraving: Veni, Vidi, Vici - Julius Caesar',
     Hjelm: 'Helmet with engraving: Two coins for my soul',
